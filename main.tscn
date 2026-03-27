@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
+[ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
+
 [node name="main" type="Node3D" unique_id=847394524]
+
+[node name="ankara üniiiiii_3" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
+script = ExtResource("2_h2yge")
+
+[editable path="ankara üniiiiii_3"]
