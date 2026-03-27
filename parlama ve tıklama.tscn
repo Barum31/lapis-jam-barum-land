@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxsfuk0jip8bl"]
+
+[ext_resource type="Script" uid="uid://8id06r6mv14q" path="res://static_body_3d.gd" id="1_0pvjg"]
+
+[node name="Node3D" type="Node3D" unique_id=1768501764]
+
+[node name="bina sablon" type="StaticBody3D" parent="." unique_id=1256252798]
+script = ExtResource("1_0pvjg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bina sablon" unique_id=378662342]
+debug_color = Color(0.499546, 0.5442366, 0.56930983, 0.41960785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bina sablon" unique_id=1733577300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0006338954, -0.052334905, -0.23570895)
