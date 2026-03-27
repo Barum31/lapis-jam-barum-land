@@ -2,30 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
-<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="3_h2yge"]
-=======
-[ext_resource type="Script" uid="uid://8id06r6mv14q" path="res://static_body_3d.gd" id="3_h2yge"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_h2yge"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lquwl"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7mycd"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_272bh"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1bvp3"]
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5vw27"]
->>>>>>> tıklama_parlama
 
 [node name="main" type="Node3D" unique_id=847394524]
 
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
-<<<<<<< HEAD
 [node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
 script = ExtResource("3_h2yge")
 max_zoom = 200.0
@@ -40,44 +23,3 @@ fov = 90.0
 near = 0.01
 
 [editable path="Map"]
-=======
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/dekanlık" parent_id_path=PackedInt32Array(953951384, 1645893367) index="0" unique_id=234994046]
-script = ExtResource("3_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/dekanlık/StaticBody3D" unique_id=2115792970]
-shape = SubResource("ConcavePolygonShape3D_h2yge")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/futbol" parent_id_path=PackedInt32Array(953951384, 1115975612) index="0" unique_id=2137737876]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/futbol/StaticBody3D" unique_id=1496168566]
-shape = SubResource("ConcavePolygonShape3D_lquwl")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/güvenlik" parent_id_path=PackedInt32Array(953951384, 1242007626) index="0" unique_id=601964142]
-script = ExtResource("3_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/güvenlik/StaticBody3D" unique_id=1905090840]
-shape = SubResource("ConcavePolygonShape3D_7mycd")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/hazırlık" parent_id_path=PackedInt32Array(953951384, 1373916076) index="0" unique_id=1049154950]
-script = ExtResource("3_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/hazırlık/StaticBody3D" unique_id=2112836485]
-shape = SubResource("ConcavePolygonShape3D_272bh")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/mühendislik" parent_id_path=PackedInt32Array(953951384, 1148872054) index="0" unique_id=1320103416]
-script = ExtResource("3_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/mühendislik/StaticBody3D" unique_id=2060207414]
-shape = SubResource("ConcavePolygonShape3D_1bvp3")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ankara üniiiiii_3/sks" parent_id_path=PackedInt32Array(953951384, 321907730) index="0" unique_id=457167777]
-script = ExtResource("3_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ankara üniiiiii_3/sks/StaticBody3D" unique_id=1424893159]
-shape = SubResource("ConcavePolygonShape3D_5vw27")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="ankara üniiiiii_3/sks/StaticBody3D" unique_id=80515237]
-shape = SubResource("ConcavePolygonShape3D_5vw27")
-
-[editable path="ankara üniiiiii_3"]
->>>>>>> tıklama_parlama
