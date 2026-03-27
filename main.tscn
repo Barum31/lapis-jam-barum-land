@@ -1,11 +1,25 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
-[ext_resource type="PackedScene" uid="uid://nwa6nmk48lmv" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="3_h2yge"]
 
 [node name="main" type="Node3D" unique_id=847394524]
 
-[node name="ankara üniiiiii_3" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
+[node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
-[editable path="ankara üniiiiii_3"]
+[node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
+script = ExtResource("3_h2yge")
+max_zoom = 200.0
+metadata/_edit_lock_ = true
+
+[node name="CameraGimbal" type="Node3D" parent="CameraPivot" unique_id=742279060]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/CameraGimbal" unique_id=1616572446]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 300, 300)
+current = true
+fov = 90.0
+near = 0.01
+
+[editable path="Map"]
