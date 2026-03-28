@@ -4,6 +4,19 @@
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://clop4kcs4fsi3" path="res://üst menü.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://ci77oeqmqfnjv" path="res://sol menü.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://bk52m3i53pk6g" path="res://map side.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://ce1pyp8mai00" path="res://menu button.png" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://bdnl6dmihihve" path="res://setting button.png" id="9_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://dp17l4pr2amu4" path="res://sound off.png" id="10_w48qg"]
+[ext_resource type="Texture2D" uid="uid://bch4dxur8v42" path="res://sound on.png" id="11_vivmo"]
+[ext_resource type="Texture2D" uid="uid://dftf7snfpxytk" path="res://history book.png" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://d22mfpr24jb7t" path="res://time menu.png" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://hk7x8ol2x420" path="res://time 1x.png" id="14_yaehf"]
+[ext_resource type="Texture2D" uid="uid://b45qs7guwj1nk" path="res://time 2x.png" id="15_074og"]
+[ext_resource type="Texture2D" uid="uid://csq0i8av6guf4" path="res://time 3x.png" id="16_cegan"]
+[ext_resource type="Texture2D" uid="uid://cd68ivbc8l8lp" path="res://buttons.png" id="17_82xsv"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -544,5 +557,156 @@ transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70
 current = true
 fov = 90.0
 near = 0.01
+
+[node name="OyunArayuzu" type="CanvasLayer" parent="." unique_id=990532156]
+
+[node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="moral barlar" type="TextureRect" parent="OyunArayuzu/UI" unique_id=685938376]
+layout_mode = 1
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 228.0
+offset_bottom = 146.0
+
+[node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI/moral barlar" unique_id=1686905052]
+position = Vector2(113, 73)
+scale = Vector2(0.55609757, 0.57198447)
+texture = ExtResource("5_7mycd")
+
+[node name="Label" type="Label" parent="OyunArayuzu/UI/moral barlar/ÜstMenü" unique_id=263278487]
+offset_left = -161.8421
+offset_top = -15.7346945
+offset_right = -45.842102
+theme_override_colors/font_color = Color(1, 0.54901963, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.16862746, 0.10980392, 0.007843138, 1)
+theme_override_colors/font_outline_color = Color(0.34437764, 0.2866606, 0.11525028, 1)
+theme_override_font_sizes/font_size = 8
+text = "sadasfasdgasdgasga23123123"
+
+[node name="sol menu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1169175648]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 192.0
+offset_right = 263.0
+offset_bottom = 481.0
+
+[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI/sol menu" unique_id=556379589]
+position = Vector2(129.875, 145)
+scale = Vector2(0.56528664, 0.6606335)
+texture = ExtResource("6_272bh")
+
+[node name="map side" type="TextureRect" parent="OyunArayuzu/UI" unique_id=699609718]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 467.0
+offset_right = 238.0
+offset_bottom = 606.0
+grow_vertical = 0
+
+[node name="MapSide" type="Sprite2D" parent="OyunArayuzu/UI/map side" unique_id=2134225343]
+position = Vector2(113, 72)
+scale = Vector2(0.5658537, 0.5687022)
+texture = ExtResource("7_272bh")
+
+[node name="Control" type="Control" parent="OyunArayuzu/UI" unique_id=712053670]
+anchors_preset = 0
+offset_left = 1040.0
+offset_top = 4.0
+offset_right = 1080.0
+offset_bottom = 44.0
+
+[node name="MenuButton" type="Sprite2D" parent="OyunArayuzu/UI/Control" unique_id=918482057]
+position = Vector2(65, 28)
+scale = Vector2(0.7000005, 0.7297297)
+texture = ExtResource("8_dg77c")
+
+[node name="Control2" type="Control" parent="OyunArayuzu/UI/Control/MenuButton" unique_id=422356301]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -92.857056
+offset_top = -38.37035
+offset_right = -52.857056
+offset_bottom = 1.6296501
+
+[node name="HistoryBook" type="Sprite2D" parent="OyunArayuzu/UI/Control/MenuButton/Control2" unique_id=189819674]
+position = Vector2(87.1427, 289.1481)
+scale = Vector2(1.1248326, 1.0204887)
+texture = ExtResource("12_2cqfq")
+
+[node name="SettingButton" type="Sprite2D" parent="OyunArayuzu/UI/Control/MenuButton/Control2" unique_id=744887563]
+position = Vector2(98.57129, 121.96297)
+scale = Vector2(0.9353735, 0.81569684)
+texture = ExtResource("9_ycdy4")
+
+[node name="SoundOff" type="Sprite2D" parent="OyunArayuzu/UI/Control/MenuButton/Control2/SettingButton" unique_id=1529930059]
+position = Vector2(-71.78174, 83.999985)
+scale = Vector2(1.1873001, 1.2778722)
+texture = ExtResource("10_w48qg")
+
+[node name="SoundOn" type="Sprite2D" parent="OyunArayuzu/UI/Control/MenuButton/Control2/SettingButton" unique_id=459269109]
+position = Vector2(15.272827, 89.03998)
+scale = Vector2(1.0722291, 1.2172881)
+texture = ExtResource("11_vivmo")
+
+[node name="sag ust menu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=374813785]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1000.0
+offset_top = 4.0
+offset_right = 1107.0
+offset_bottom = 256.0
+grow_horizontal = 0
+
+[node name="tarih" type="TextureRect" parent="OyunArayuzu/UI" unique_id=634529797]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 1.0
+offset_right = 1043.0
+offset_bottom = 70.0
+
+[node name="TimeMenu" type="Sprite2D" parent="OyunArayuzu/UI/tarih" unique_id=747267743]
+position = Vector2(149, 34)
+scale = Vector2(0.8130194, 0.8625)
+texture = ExtResource("13_ycdy4")
+
+[node name="Time1x" type="Sprite2D" parent="OyunArayuzu/UI/tarih/TimeMenu" unique_id=825457464]
+position = Vector2(41.819458, -27.826088)
+scale = Vector2(0.931531, 0.78460777)
+texture = ExtResource("14_yaehf")
+
+[node name="Time2x" type="Sprite2D" parent="OyunArayuzu/UI/tarih/TimeMenu" unique_id=1286063781]
+position = Vector2(145.13806, -28.985508)
+scale = Vector2(0.8591792, 0.8309179)
+texture = ExtResource("15_074og")
+
+[node name="Time3x" type="Sprite2D" parent="OyunArayuzu/UI/tarih/TimeMenu" unique_id=633163596]
+position = Vector2(93.93994, -28.405792)
+scale = Vector2(0.8983686, 0.81159395)
+texture = ExtResource("16_cegan")
+
+[node name="butonlar" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1868934152]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.525
+anchor_top = 13.075
+anchor_right = 28.0
+anchor_bottom = 16.05
+metadata/_edit_use_anchors_ = true
+
+[node name="Buttons" type="Sprite2D" parent="OyunArayuzu/UI/butonlar" unique_id=303417695]
+position = Vector2(431, 59)
+scale = Vector2(0.67750204, 0.6075125)
+texture = ExtResource("17_82xsv")
 
 [editable path="Map"]
