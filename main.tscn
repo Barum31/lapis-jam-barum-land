@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
+[ext_resource type="PackedScene" uid="uid://8868lknc4hnc" path="res://deneme.tscn" id="1_ig7tw"]
+
 [node name="main" type="Node3D" unique_id=847394524]
+
+[node name="Node3D" parent="." unique_id=1642235600 instance=ExtResource("1_ig7tw")]
+
+[node name="Node3D2" parent="." unique_id=1744349352 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.169008, 0, 0)
+
+[node name="Node3D3" parent="." unique_id=1739236476 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9130588, 0, 5.7556925)
