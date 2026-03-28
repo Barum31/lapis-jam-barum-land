@@ -5,6 +5,7 @@ var current_tick = 0
 @onready var player_camera = $CameraPivot/CameraGimbal/PlayerCamera
 @onready var animation_player = $CanvasLayer/MainMenu/AnimationPlayer
 @onready var main_menu = $CanvasLayer/MainMenu
+
 var kaynaklar = {
 	"moral": 100,
 	"nufus": 50,
@@ -21,6 +22,7 @@ var gelir_oranlari = {
 func _ready():
 	# Oyun başlar başlamaz menü kamerasını aktif et
 	menu_camera.make_current()
+	
 
 
 # Animasyonun EN SONUNDA çağrılacak fonksiyon
@@ -35,6 +37,8 @@ func oyunu_baslat():
 	timer.autostart = true
 	timer.timeout.connect(_on_tick_timeout)
 	timer.start()
+	
+
 	
 	# Oyuncunun hareket script'ini burada aktif edebilirsin
 func _on_tick_timeout():
