@@ -19,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://hk7x8ol2x420" path="res://time 1x.png" id="14_yaehf"]
 [ext_resource type="Texture2D" uid="uid://b45qs7guwj1nk" path="res://time 2x.png" id="15_074og"]
 [ext_resource type="Texture2D" uid="uid://csq0i8av6guf4" path="res://time 3x.png" id="16_cegan"]
-[ext_resource type="Texture2D" uid="uid://cd68ivbc8l8lp" path="res://buttons.png" id="17_82xsv"]
 [ext_resource type="Script" uid="uid://c108nat03t4h2" path="res://time_menu.gd" id="20_d13ii"]
 [ext_resource type="Script" uid="uid://cmkmipsq16mpr" path="res://sound_off.gd" id="20_ryguw"]
 [ext_resource type="Script" uid="uid://dncvynvyybb24" path="res://sound_on.gd" id="21_getpj"]
@@ -27,6 +26,7 @@
 [ext_resource type="Script" uid="uid://dv3qto6bfwunn" path="res://time_2x.gd" id="24_0odxb"]
 [ext_resource type="Script" uid="uid://dkreg5tse605t" path="res://time_3x.gd" id="26_lswn8"]
 [ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://coppwlg51ldnw" path="res://button.png" id="27_xuqvo"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -610,20 +610,6 @@ position = Vector2(129.875, 145)
 scale = Vector2(0.56528664, 0.6606335)
 texture = ExtResource("6_272bh")
 
-[node name="butonlar" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1868934152]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 6.525
-anchor_top = 13.075
-anchor_right = 28.0
-anchor_bottom = 16.05
-metadata/_edit_use_anchors_ = true
-
-[node name="Buttons" type="Sprite2D" parent="OyunArayuzu/UI/butonlar" unique_id=303417695]
-position = Vector2(431, 59)
-scale = Vector2(0.67750204, 0.6075125)
-texture = ExtResource("17_82xsv")
-
 [node name="MenuButton" type="TextureRect" parent="OyunArayuzu/UI" unique_id=523656698]
 layout_mode = 0
 offset_left = 1072.0
@@ -733,5 +719,35 @@ scale = Vector2(0.5658537, 0.5687022)
 mouse_filter = 0
 texture = ExtResource("7_272bh")
 script = ExtResource("27_a6jrf")
+
+[node name="Button" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=66864735]
+position = Vector2(401, 550)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=603529263]
+position = Vector2(985, 616.00006)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
+position = Vector2(691, 615.00006)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1683483060]
+position = Vector2(401, 616)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=851520184]
+position = Vector2(983, 550.00006)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1248153862]
+position = Vector2(694.00006, 548)
+scale = Vector2(0.67317075, 0.5952381)
+texture = ExtResource("27_xuqvo")
 
 [editable path="Map"]
