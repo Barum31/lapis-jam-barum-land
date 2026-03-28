@@ -26,6 +26,7 @@
 [ext_resource type="Script" uid="uid://d14t0xuy3pob2" path="res://time_1x.gd" id="22_1u8w0"]
 [ext_resource type="Script" uid="uid://dv3qto6bfwunn" path="res://time_2x.gd" id="24_0odxb"]
 [ext_resource type="Script" uid="uid://dkreg5tse605t" path="res://time_3x.gd" id="26_lswn8"]
+[ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -609,22 +610,6 @@ position = Vector2(129.875, 145)
 scale = Vector2(0.56528664, 0.6606335)
 texture = ExtResource("6_272bh")
 
-[node name="map side" type="TextureRect" parent="OyunArayuzu/UI" unique_id=699609718]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 467.0
-offset_right = 238.0
-offset_bottom = 606.0
-grow_vertical = 0
-
-[node name="MapSide" type="Sprite2D" parent="OyunArayuzu/UI/map side" unique_id=2134225343]
-position = Vector2(113, 72)
-scale = Vector2(0.5658537, 0.5687022)
-texture = ExtResource("7_272bh")
-
 [node name="butonlar" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1868934152]
 layout_mode = 1
 anchors_preset = -1
@@ -737,5 +722,16 @@ offset_bottom = 32.31884
 scale = Vector2(0.8591792, 0.8309179)
 texture = ExtResource("15_074og")
 script = ExtResource("24_0odxb")
+
+[node name="MapSide" type="TextureRect" parent="OyunArayuzu/UI" unique_id=829830900]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 505.0
+offset_right = 406.0
+offset_bottom = 767.0
+scale = Vector2(0.5658537, 0.5687022)
+mouse_filter = 0
+texture = ExtResource("7_272bh")
+script = ExtResource("27_a6jrf")
 
 [editable path="Map"]
