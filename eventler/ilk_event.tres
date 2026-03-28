@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://ct5qfspeskn07"]
+
+[ext_resource type="Script" uid="uid://biyt2pi33aq1e" path="res://game_event.gd" id="1_20avq"]
+
+[resource]
+script = ExtResource("1_20avq")
+event_title = "yangın"
+event_description = "dehşet bir yangın çıktı maarrem kek yanarak ölmeküzere üzere "
+choices = Array[String](["yangını söndürmeye yardım et", "görmezden gel", "itfaiye desteği için müfettişler konuş", "karısının yanına git öldüğünü söyle"])
+choice_outcomes = null
+metadata/_custom_type_script = "uid://biyt2pi33aq1e"

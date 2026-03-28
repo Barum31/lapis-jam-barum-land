@@ -2434,4 +2434,10 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 
 material_override = SubResource("StandardMaterial3D_h8e4i")
 mesh = SubResource("QuadMesh_ok6jj")
 
+[node name="Control" type="Control" parent="." unique_id=1701323838]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [editable path="Map"]
