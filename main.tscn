@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
 [ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b4s00k0m5boah" path="res://main.gd" id="1_lquwl"]
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bskfhmys03lgq" path="res://Main_menu.tscn" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://cbu647ei5w4vn" path="res://main_menu.gd" id="7_272bh"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -228,11 +231,12 @@ points = PackedVector3Array(0.01030159, -0.19991416, 0.10486464, 0.23693651, -0.
 points = PackedVector3Array(0.20133922, -0.022, 0.060853984, 0.2936, 0.04268151, 0.061085485, 0.29873595, 0.04730477, 0.02246002, 0.29873595, -0.045409508, 0.02246002, 0.19574022, 0.04730477, -0.008450791, 0.19574022, -0.045409508, -0.008450791, 0.23694456, -0.045409508, 0.08426349, 0.22632585, 0.048013948, 0.084972665, 0.28843233, 0.04730477, -0.008450791, 0.28843233, -0.045409508, 0.07395384, 0.28843233, -0.045409508, -0.008450791, 0.19574022, 0.02669454, 0.06365326, 0.28843233, 0.04730477, 0.07395384, 0.22633137, -0.04610627, 0.08496025, 0.19437037, -0.04664261, 0.0009, 0.19437037, 0.048537873, 0.0009, 0.2936, -0.040786248, 0.061085485, 0.23694456, 0.04730477, 0.08426349)
 
 [node name="main" type="Node3D" unique_id=847394524]
+script = ExtResource("1_lquwl")
 
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 677822772) index="0" unique_id=1789515475]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 1204349815) index="0" unique_id=1789515475]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/dekanlık/StaticBody3D" unique_id=1342279283]
@@ -250,7 +254,7 @@ transform = Transform3D(0.99999994, -3.7252903e-09, -7.1054274e-15, 2.3841858e-0
 visible = false
 shape = SubResource("ConvexPolygonShape3D_7mycd")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 2087266174) index="0" unique_id=734545830]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 1882103670) index="0" unique_id=734545830]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1533340794]
@@ -309,7 +313,7 @@ shape = SubResource("ConvexPolygonShape3D_xuqvo")
 transform = Transform3D(0.9999999, 0, -7.1054274e-15, -2.9802322e-08, 1, 7.1054274e-15, -3.5527137e-15, 1.4210855e-14, 1.0000001, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_qsp4k")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1357295813) index="0" unique_id=1940350538]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1681685293) index="0" unique_id=1940350538]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=837400100]
@@ -376,7 +380,7 @@ shape = SubResource("ConvexPolygonShape3D_wy5fy")
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_gx4rg")
 
-[node name="hazırlık" parent="Map" index="5" unique_id=1321281106]
+[node name="hazırlık" parent="Map" index="5" unique_id=121404992]
 transform = Transform3D(3314.3838, 0.37831554, 1.5327657e-08, 0, -0.00015630406, 3314.3826, 0.35065603, -3575.82, -0.00014487626, -78.10832, -0.6716414, -46.16445)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/hazırlık" index="0" unique_id=142895308]
@@ -397,7 +401,7 @@ transform = Transform3D(1, 7.275958e-12, 0, 7.275958e-12, 0.99999994, 0, 0, 0, 0
 visible = false
 shape = SubResource("ConvexPolygonShape3D_cegan")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 1818367039) index="0" unique_id=117841318]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 511732219) index="0" unique_id=117841318]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=958356969]
@@ -430,7 +434,7 @@ transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.734723
 visible = false
 shape = SubResource("ConvexPolygonShape3D_dg77c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1306376321) index="0" unique_id=706274284]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1863052537) index="0" unique_id=706274284]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D29" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1573940797]
@@ -529,7 +533,7 @@ shape = SubResource("ConvexPolygonShape3D_ruth0")
 [node name="CollisionShape3D31" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1331498725]
 shape = SubResource("ConvexPolygonShape3D_rm4vd")
 
-[node name="zemin" parent="Map" index="9" unique_id=1916540813]
+[node name="zemin" parent="Map" index="9" unique_id=2008264063]
 transform = Transform3D(3314.3794, 0.46707025, 9.646123e-08, 0, -0.0003792693, 3314.3823, 0.48657167, -3181.5413, -0.0003951052, 0.022979736, -0.03209114, -0.023124695)
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
@@ -544,5 +548,10 @@ transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70
 current = true
 fov = 90.0
 near = 0.01
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1496495054]
+
+[node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("6_7mycd")]
+script = ExtResource("7_272bh")
 
 [editable path="Map"]
