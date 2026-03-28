@@ -13,7 +13,7 @@ config_version=5
 config/name="LapisJamBarumLand"
 run/main_scene="uid://cawqgkc6qie3l"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Graphics/icon.svg"
 
 [input]
 

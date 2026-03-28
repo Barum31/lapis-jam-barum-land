@@ -1,25 +1,145 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
-[ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
-[ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://Level/ankara üniiiiii_3.fbx" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b4s00k0m5boah" path="res://System/main.gd" id="1_kek77"]
+[ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://System/ankara_üniiiiii_3.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://System/camera_pivot.gd" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://m4ggqxmv2pc7" path="res://Graphics/START BUTTON.png" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://brvno2e12bc0b" path="res://Graphics/BARUMLAND TEXT.png" id="4_272bh"]
+[ext_resource type="Texture2D" uid="uid://d3reakkm68o86" path="res://Graphics/SETTİNGS BUTTON.png" id="5_7mycd"]
+[ext_resource type="Script" uid="uid://cbu647ei5w4vn" path="res://main_menu.gd" id="5_kek77"]
+[ext_resource type="Texture2D" uid="uid://0m07erm48iid" path="res://Graphics/CREDİTS.png" id="6_272bh"]
+
+[sub_resource type="Animation" id="Animation_272bh"]
+resource_name = "MenuZoom"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087), Vector3(-0.40020752, 111.23587, 109.293304)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.4666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"oyunu_baslat"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_5vw27"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kek77"]
+_data = {
+&"MenuZoom": SubResource("Animation_272bh"),
+&"RESET": SubResource("Animation_5vw27")
+}
 
 [node name="main" type="Node3D" unique_id=847394524]
+script = ExtResource("1_kek77")
 
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
 script = ExtResource("3_h2yge")
-max_zoom = 200.0
+min_zoom = 150.0
 metadata/_edit_lock_ = true
 
 [node name="CameraGimbal" type="Node3D" parent="CameraPivot" unique_id=742279060]
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/CameraGimbal" unique_id=1616572446]
-transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 300, 300)
+[node name="PlayerCamera" type="Camera3D" parent="CameraPivot/CameraGimbal" unique_id=1616572446]
+transform = Transform3D(1, 0, 0, 0, 0.4863353, 0.8737722, 0, -0.8737722, 0.4863353, -0.4, 111.236, 109.293)
+fov = 70.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1525708629]
+
+[node name="MainMenu" type="Control" parent="CanvasLayer" unique_id=1595390476]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 657.0
+offset_bottom = 312.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5_kek77")
+
+[node name="TextureRectLogo" type="TextureRect" parent="CanvasLayer/MainMenu" unique_id=662434946]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 1772.0
+offset_bottom = 294.0
+mouse_filter = 2
+texture = ExtResource("4_272bh")
+
+[node name="TextureButtonStart" type="TextureButton" parent="CanvasLayer/MainMenu" unique_id=1090859643]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 458.0
+offset_right = 739.0
+offset_bottom = 652.0
+texture_normal = ExtResource("4_1bvp3")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartSettings" type="TextureButton" parent="CanvasLayer/MainMenu" unique_id=1452438974]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 660.0
+offset_right = 729.0
+offset_bottom = 854.0
+texture_normal = ExtResource("5_7mycd")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartCredits" type="TextureButton" parent="CanvasLayer/MainMenu" unique_id=1484377221]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 812.0
+offset_right = 729.0
+offset_bottom = 1006.0
+texture_normal = ExtResource("6_272bh")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MenuCamera" type="Camera3D" parent="CanvasLayer/MainMenu" unique_id=1779234980]
+transform = Transform3D(1, 0, 0, 0, 0.48679286, 0.87351745, 0, -0.87351745, 0.48679286, -0.40020752, 299.4002, 300.42087)
 current = true
-fov = 90.0
-near = 0.01
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/MainMenu" unique_id=1159902771]
+libraries/ = SubResource("AnimationLibrary_kek77")
+
+[connection signal="pressed" from="CanvasLayer/MainMenu/TextureButtonStart" to="CanvasLayer/MainMenu" method="_on_texture_button_start_pressed"]
 
 [editable path="Map"]
