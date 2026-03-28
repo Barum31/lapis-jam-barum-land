@@ -1,15 +1,18 @@
 extends TextureRect
 
+# Sadece bir üst düğüme (UI) çıkıyoruz
+@onready var ana_ui = $".."
+
+# İki üst düğüme çıkıp HaritaEkrani'ni buluyoruz (Seninkinde bir tane ../ eksikti)
+@onready var harita_ekrani = $"../../HaritaEkrani"
+
+# Tıklamaları algılayan Godot'nun ana fonksiyonu (İsmi tam olarak böyle olmalı)
 func _gui_input(event):
-	# Farenin sol tıkına basıldığında çalışır
+	# Sadece farenin sol tıkına basıldığında çalışsın
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		
-		# Assetler gelene kadar sadece konsola yazı yazdırıp test edeceğiz
-		print("Harita menüsü açılıyor... (Assetler bekleniyor!)")
+		ana_ui.hide() # Arayüzü gizle
 		
-		# İleride harita sahnesi geldiğinde buraya şu tarz bir kod yazacağız:
-		# get_tree().change_scene_to_file("res://harita_sahnesi.tscn") 
-		# Veya aynı sahnede açılacaksa: $GelecekHaritaPaneli.show()
+		harita_ekrani.show() # Haritayı tam ekran aç (Sadece visible=true yazarsan hata olur)
 		
-		# Tıklamanın arkadaki 3D dünyaya geçmesini engelle
 		accept_event()

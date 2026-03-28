@@ -1,32 +1,38 @@
 [gd_scene format=3 uid="uid://cawqgkc6qie3l"]
 
 [ext_resource type="PackedScene" uid="uid://bv12t4nvdvevm" path="res://ankara üniiiiii_3.fbx" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://b4s00k0m5boah" path="res://main.gd" id="1_seu75"]
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://clop4kcs4fsi3" path="res://üst menü.png" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://ci77oeqmqfnjv" path="res://sol menü.png" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://bk52m3i53pk6g" path="res://map side.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://wkgj3htc4klh" path="res://üst menü.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://6i12o4beybqp" path="res://sol menü.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://bcdmwxao711cx" path="res://map side.png" id="7_272bh"]
 [ext_resource type="Script" uid="uid://dcsvvnipcrula" path="res://sag_ust_menu.gd" id="8_074og"]
-[ext_resource type="Texture2D" uid="uid://ce1pyp8mai00" path="res://menu button.png" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://bdnl6dmihihve" path="res://setting button.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://dp17l4pr2amu4" path="res://sound off.png" id="10_w48qg"]
-[ext_resource type="Script" uid="uid://c16ldxjhkrkok" path="res://history_book.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://bch4dxur8v42" path="res://sound on.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://dftf7snfpxytk" path="res://history book.png" id="12_2cqfq"]
-[ext_resource type="Script" uid="uid://dukh1eu6dnpx6" path="res://setting_button.gd" id="12_cegan"]
-[ext_resource type="Texture2D" uid="uid://d22mfpr24jb7t" path="res://time menu.png" id="13_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://hk7x8ol2x420" path="res://time 1x.png" id="14_yaehf"]
-[ext_resource type="Texture2D" uid="uid://b45qs7guwj1nk" path="res://time 2x.png" id="15_074og"]
-[ext_resource type="Texture2D" uid="uid://csq0i8av6guf4" path="res://time 3x.png" id="16_cegan"]
-[ext_resource type="Script" uid="uid://c108nat03t4h2" path="res://time_menu.gd" id="20_d13ii"]
-[ext_resource type="Script" uid="uid://cmkmipsq16mpr" path="res://sound_off.gd" id="20_ryguw"]
-[ext_resource type="Script" uid="uid://dncvynvyybb24" path="res://sound_on.gd" id="21_getpj"]
-[ext_resource type="Script" uid="uid://d14t0xuy3pob2" path="res://time_1x.gd" id="22_1u8w0"]
-[ext_resource type="Script" uid="uid://dv3qto6bfwunn" path="res://time_2x.gd" id="24_0odxb"]
-[ext_resource type="Script" uid="uid://dkreg5tse605t" path="res://time_3x.gd" id="26_lswn8"]
+[ext_resource type="Texture2D" uid="uid://glcf1eldo2tl" path="res://menu button.png" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://cdexq3alc208m" path="res://setting button.png" id="9_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cblpb2na2laij" path="res://sound off.png" id="10_w48qg"]
+[ext_resource type="Script" path="res://history_book.gd" id="11_82xsv"]
+[ext_resource type="Texture2D" uid="uid://ojlxee4u6vpy" path="res://sound on.png" id="11_vivmo"]
+[ext_resource type="Texture2D" uid="uid://dw0llujla6f5o" path="res://history book.png" id="12_2cqfq"]
+[ext_resource type="Script" path="res://setting_button.gd" id="12_cegan"]
+[ext_resource type="Texture2D" uid="uid://cc6o1jm3ih8s2" path="res://time menu.png" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://jyidyxmld1iw" path="res://time 1x.png" id="14_yaehf"]
+[ext_resource type="Texture2D" uid="uid://bdkhamaqbpj1c" path="res://time 2x.png" id="15_074og"]
+[ext_resource type="Texture2D" uid="uid://6232xk5aji2p" path="res://time 3x.png" id="16_cegan"]
+[ext_resource type="Script" path="res://time_menu.gd" id="20_d13ii"]
+[ext_resource type="Script" path="res://sound_off.gd" id="20_ryguw"]
+[ext_resource type="Script" path="res://sound_on.gd" id="21_getpj"]
+[ext_resource type="Script" path="res://time_1x.gd" id="22_1u8w0"]
+[ext_resource type="Script" path="res://time_2x.gd" id="24_0odxb"]
+[ext_resource type="Script" path="res://time_3x.gd" id="26_lswn8"]
 [ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
-[ext_resource type="Texture2D" uid="uid://coppwlg51ldnw" path="res://button.png" id="27_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://sg1fyut2w2i5" path="res://button.png" id="27_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cyvossrxg8sxe" path="res://map.png" id="28_qsp4k"]
+[ext_resource type="Script" uid="uid://ctib752frnaab" path="res://geri_butonu.gd" id="28_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://kxc6t167ajwn" path="res://cıkıs button.png" id="29_kq58d"]
+[ext_resource type="PackedScene" path="res://Main_menu.tscn" id="32_htxhm"]
+[ext_resource type="Script" uid="uid://cbu647ei5w4vn" path="res://main_menu.gd" id="33_jq2sk"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -251,11 +257,12 @@ points = PackedVector3Array(0.01030159, -0.19991416, 0.10486464, 0.23693651, -0.
 points = PackedVector3Array(0.20133922, -0.022, 0.060853984, 0.2936, 0.04268151, 0.061085485, 0.29873595, 0.04730477, 0.02246002, 0.29873595, -0.045409508, 0.02246002, 0.19574022, 0.04730477, -0.008450791, 0.19574022, -0.045409508, -0.008450791, 0.23694456, -0.045409508, 0.08426349, 0.22632585, 0.048013948, 0.084972665, 0.28843233, 0.04730477, -0.008450791, 0.28843233, -0.045409508, 0.07395384, 0.28843233, -0.045409508, -0.008450791, 0.19574022, 0.02669454, 0.06365326, 0.28843233, 0.04730477, 0.07395384, 0.22633137, -0.04610627, 0.08496025, 0.19437037, -0.04664261, 0.0009, 0.19437037, 0.048537873, 0.0009, 0.2936, -0.040786248, 0.061085485, 0.23694456, 0.04730477, 0.08426349)
 
 [node name="main" type="Node3D" unique_id=847394524]
+script = ExtResource("1_seu75")
 
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 677822772) index="0" unique_id=1789515475]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 1204349815) index="0" unique_id=1789515475]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/dekanlık/StaticBody3D" unique_id=1342279283]
@@ -273,7 +280,7 @@ transform = Transform3D(0.99999994, -3.7252903e-09, -7.1054274e-15, 2.3841858e-0
 visible = false
 shape = SubResource("ConvexPolygonShape3D_7mycd")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 2087266174) index="0" unique_id=734545830]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 1882103670) index="0" unique_id=734545830]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1533340794]
@@ -332,7 +339,7 @@ shape = SubResource("ConvexPolygonShape3D_xuqvo")
 transform = Transform3D(0.9999999, 0, -7.1054274e-15, -2.9802322e-08, 1, 7.1054274e-15, -3.5527137e-15, 1.4210855e-14, 1.0000001, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_qsp4k")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1357295813) index="0" unique_id=1940350538]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1681685293) index="0" unique_id=1940350538]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=837400100]
@@ -399,7 +406,7 @@ shape = SubResource("ConvexPolygonShape3D_wy5fy")
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_gx4rg")
 
-[node name="hazırlık" parent="Map" index="5" unique_id=1321281106]
+[node name="hazırlık" parent="Map" index="5" unique_id=121404992]
 transform = Transform3D(3314.3838, 0.37831554, 1.5327657e-08, 0, -0.00015630406, 3314.3826, 0.35065603, -3575.82, -0.00014487626, -78.10832, -0.6716414, -46.16445)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/hazırlık" index="0" unique_id=142895308]
@@ -420,7 +427,7 @@ transform = Transform3D(1, 7.275958e-12, 0, 7.275958e-12, 0.99999994, 0, 0, 0, 0
 visible = false
 shape = SubResource("ConvexPolygonShape3D_cegan")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 1818367039) index="0" unique_id=117841318]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 511732219) index="0" unique_id=117841318]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=958356969]
@@ -453,7 +460,7 @@ transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.734723
 visible = false
 shape = SubResource("ConvexPolygonShape3D_dg77c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1306376321) index="0" unique_id=706274284]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1863052537) index="0" unique_id=706274284]
 script = ExtResource("3_h2yge")
 
 [node name="CollisionShape3D29" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1573940797]
@@ -552,17 +559,16 @@ shape = SubResource("ConvexPolygonShape3D_ruth0")
 [node name="CollisionShape3D31" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1331498725]
 shape = SubResource("ConvexPolygonShape3D_rm4vd")
 
-[node name="zemin" parent="Map" index="9" unique_id=1916540813]
+[node name="zemin" parent="Map" index="9" unique_id=2008264063]
 transform = Transform3D(3314.3794, 0.46707025, 9.646123e-08, 0, -0.0003792693, 3314.3823, 0.48657167, -3181.5413, -0.0003951052, 0.022979736, -0.03209114, -0.023124695)
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
 script = ExtResource("4_1bvp3")
-max_zoom = 200.0
 metadata/_edit_lock_ = true
 
 [node name="CameraGimbal" type="Node3D" parent="CameraPivot" unique_id=742279060]
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/CameraGimbal" unique_id=1616572446]
+[node name="PlayerCamera" type="Camera3D" parent="CameraPivot/CameraGimbal" unique_id=1616572446]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 300, 300)
 current = true
 fov = 90.0
@@ -571,51 +577,18 @@ near = 0.01
 [node name="OyunArayuzu" type="CanvasLayer" parent="." unique_id=990532156]
 
 [node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="moral barlar" type="TextureRect" parent="OyunArayuzu/UI" unique_id=685938376]
-layout_mode = 1
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 228.0
-offset_bottom = 146.0
-
-[node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI/moral barlar" unique_id=1686905052]
-position = Vector2(112, 71)
-scale = Vector2(0.55609757, 0.57198447)
-texture = ExtResource("5_7mycd")
-
-[node name="Label" type="Label" parent="OyunArayuzu/UI/moral barlar/ÜstMenü" unique_id=263278487]
-offset_left = -161.8421
-offset_top = -15.7346945
-offset_right = -45.842102
-theme_override_colors/font_color = Color(1, 0.54901963, 1, 1)
-theme_override_colors/font_shadow_color = Color(0.16862746, 0.10980392, 0.007843138, 1)
-theme_override_colors/font_outline_color = Color(0.34437764, 0.2866606, 0.11525028, 1)
-theme_override_font_sizes/font_size = 8
-text = "sadasfasdgasdgasga23123123"
-
-[node name="sol menu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1169175648]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 192.0
-offset_right = 263.0
-offset_bottom = 481.0
-
-[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI/sol menu" unique_id=556379589]
-position = Vector2(129.875, 145)
-scale = Vector2(0.56528664, 0.6606335)
-texture = ExtResource("6_272bh")
-
 [node name="MenuButton" type="TextureRect" parent="OyunArayuzu/UI" unique_id=523656698]
 layout_mode = 0
-offset_left = 1072.0
-offset_top = 10.0
-offset_right = 1172.0
-offset_bottom = 84.0
+offset_left = 1832.0
+offset_top = 6.0
+offset_right = 1932.0
+offset_bottom = 80.0
 scale = Vector2(0.7000005, 0.7297297)
 texture = ExtResource("8_dg77c")
 script = ExtResource("8_074og")
@@ -671,10 +644,10 @@ script = ExtResource("21_getpj")
 
 [node name="TimeMenu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1713432950]
 layout_mode = 0
-offset_left = 702.0
-offset_top = 1.9999995
-offset_right = 1063.0
-offset_bottom = 82.0
+offset_left = 1420.0
+offset_top = 1.9999981
+offset_right = 1822.8195
+offset_bottom = 109.826096
 scale = Vector2(0.8130194, 0.8625)
 texture = ExtResource("13_ycdy4")
 script = ExtResource("20_d13ii")
@@ -709,45 +682,83 @@ scale = Vector2(0.8591792, 0.8309179)
 texture = ExtResource("15_074og")
 script = ExtResource("24_0odxb")
 
+[node name="Button1" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
+position = Vector2(643.00006, 900)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1432497986]
+position = Vector2(1076, 898)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=57475444]
+position = Vector2(1501.0001, 899)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=989638014]
+position = Vector2(1503.0001, 1006)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=2103304781]
+position = Vector2(1072.0001, 1004)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=345752423]
+position = Vector2(646, 1010)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=556379589]
+position = Vector2(188.43752, 526.5)
+scale = Vector2(0.80493635, 0.9479638)
+texture = ExtResource("6_272bh")
+
+[node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1686905052]
+position = Vector2(247, 107.00001)
+scale = Vector2(0.7707317, 0.8385214)
+texture = ExtResource("5_7mycd")
+
 [node name="MapSide" type="TextureRect" parent="OyunArayuzu/UI" unique_id=829830900]
 layout_mode = 0
-offset_left = -4.0
-offset_top = 505.0
-offset_right = 406.0
-offset_bottom = 767.0
+offset_left = -0.9999995
+offset_top = 846.99994
+offset_right = 613.99994
+offset_bottom = 1263.7383
 scale = Vector2(0.5658537, 0.5687022)
 mouse_filter = 0
 texture = ExtResource("7_272bh")
 script = ExtResource("27_a6jrf")
 
-[node name="Button" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=66864735]
-position = Vector2(401, 550)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
+[node name="HaritaEkrani" type="TextureRect" parent="OyunArayuzu" unique_id=1674314826]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = 1.0
+offset_right = -4.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("28_qsp4k")
 
-[node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=603529263]
-position = Vector2(985, 616.00006)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
+[node name="GeriButonu" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=524464334]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 31.0
+offset_right = 172.0
+offset_bottom = 131.0
+mouse_filter = 0
+texture = ExtResource("29_kq58d")
+script = ExtResource("28_xuqvo")
 
-[node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
-position = Vector2(691, 615.00006)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
 
-[node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1683483060]
-position = Vector2(401, 616)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=851520184]
-position = Vector2(983, 550.00006)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1248153862]
-position = Vector2(694.00006, 548)
-scale = Vector2(0.67317075, 0.5952381)
-texture = ExtResource("27_xuqvo")
+[node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("32_htxhm")]
+script = ExtResource("33_jq2sk")
 
 [editable path="Map"]
