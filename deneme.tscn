@@ -42,7 +42,7 @@ material_override = SubResource("StandardMaterial3D_0noen")
 mesh = SubResource("QuadMesh_s20iv")
 surface_material_override/0 = SubResource("StandardMaterial3D_bnfl7")
 
-[node name="cati" type="MeshInstance3D" parent="." unique_id=948727705]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=948727705]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -2)
 material_override = SubResource("StandardMaterial3D_j5rsp")
 mesh = SubResource("PlaneMesh_tlklb")
