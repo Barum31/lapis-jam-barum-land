@@ -1,18 +1,11 @@
 extends TextureRect
 
-# Sadece bir üst düğüme (UI) çıkıyoruz
-@onready var ana_ui = $".."
+# Artık % işareti sayesinde Godot bu düğümleri nerede olurlarsa olsunlar şak diye bulacak!
+@onready var ana_ui = %UI
+@onready var harita_ekrani = %HaritaEkrani
 
-# İki üst düğüme çıkıp HaritaEkrani'ni buluyoruz (Seninkinde bir tane ../ eksikti)
-@onready var harita_ekrani = $"../../HaritaEkrani"
-
-# Tıklamaları algılayan Godot'nun ana fonksiyonu (İsmi tam olarak böyle olmalı)
 func _gui_input(event):
-	# Sadece farenin sol tıkına basıldığında çalışsın
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		
-		ana_ui.hide() # Arayüzü gizle
-		
-		harita_ekrani.show() # Haritayı tam ekran aç (Sadece visible=true yazarsan hata olur)
-		
+		ana_ui.hide() 
+		harita_ekrani.show() 
 		accept_event()
