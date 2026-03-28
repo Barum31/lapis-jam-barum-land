@@ -41,6 +41,8 @@
 [ext_resource type="Texture2D" uid="uid://b4ttc1dmhmwcx" path="res://ulusal yükseliş.png" id="36_come4"]
 [ext_resource type="Texture2D" uid="uid://cbq6upa55ahd0" path="res://arden toy.png" id="37_come4"]
 [ext_resource type="Texture2D" uid="uid://b3cmn4psyyhvk" path="res://ulusun huzuru.png" id="38_h8e4i"]
+[ext_resource type="FontFile" uid="uid://dol2bbxwl1qps" path="res://Montserrat-Black.ttf" id="41_d2t1y"]
+[ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -771,21 +773,22 @@ texture = ExtResource("28_qsp4k")
 
 [node name="GeriButonu" type="TextureRect" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=524464334]
 layout_mode = 0
-offset_left = 63.0
-offset_top = 29.0
-offset_right = 198.68297
-offset_bottom = 157.88165
+offset_left = 58.572575
+offset_top = 28.842882
+offset_right = 194.25554
+offset_bottom = 157.72453
 scale = Vector2(0.8844146, 0.85349613)
 mouse_filter = 0
 texture = ExtResource("29_kq58d")
 script = ExtResource("28_xuqvo")
 
 [node name="Prof_asir_uretim_kamp" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=40188222]
+show_behind_parent = true
 layout_mode = 0
-offset_left = 236.0
-offset_top = 271.0
-offset_right = 636.0
-offset_bottom = 766.0
+offset_left = 248.93375
+offset_top = 264.83008
+offset_right = 648.9337
+offset_bottom = 759.8301
 texture_normal = ExtResource("32_jq2sk")
 script = ExtResource("35_4lmeg")
 bolge_ismi = "UÜSK Prof. Dr. Asır Kurt Üretim Kampı: "
@@ -794,6 +797,7 @@ Müfettiş: Asım Berk
 "
 
 [node name="Esmael_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=2015948887]
+show_behind_parent = true
 layout_mode = 0
 offset_left = 326.90546
 offset_top = 837.99115
@@ -807,15 +811,21 @@ Müfettiş: Ahmet Bozdağ
 "
 
 [node name="yuce_ulus_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=428799507]
+show_behind_parent = true
 layout_mode = 0
-offset_left = 490.99997
-offset_top = 68.00001
-offset_right = 796.0
-offset_bottom = 660.0
+offset_left = 504.5235
+offset_top = 55.063686
+offset_right = 809.52356
+offset_bottom = 647.06366
 texture_normal = ExtResource("34_facbu")
 script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Yüce Ulus Üretim Kampı:"
+bolge_detayi = "Lojistik ve taşımacılık üzerine uzmanlaşılmıştır. Kaçakçılar ve tüccarlar buradan çıkar. UMMK subaylarını en sevdiği üretim kampıdır.
+Müfettiş: Talim Nedim
+"
 
 [node name="ulusal_devrim_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1344667196]
+show_behind_parent = true
 layout_mode = 0
 offset_left = 664.382
 offset_top = 541.68414
@@ -823,8 +833,11 @@ offset_right = 1321.3821
 offset_bottom = 1085.6841
 texture_normal = ExtResource("35_b1qrp")
 script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusal Devrim Üretim Kampı"
+bolge_detayi = "Kampımız!!!"
 
 [node name="ulusal_yukselis_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1186963285]
+show_behind_parent = true
 layout_mode = 0
 offset_left = 816.0
 offset_top = 174.0
@@ -832,17 +845,27 @@ offset_right = 1763.0
 offset_bottom = 702.0
 texture_normal = ExtResource("36_come4")
 script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusal Yükseliş Üretim Kampı: "
+bolge_detayi = "Kereste ham maddeleri ve üst düzey tekstil üretiminde uzmanlaşılmıştır. En büyük üretim kampıdır. 
+Müfettiş: Mustafa Kam
+"
 
 [node name="arden_toy_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1953815616]
+show_behind_parent = true
 layout_mode = 0
-offset_left = 705.0
-offset_top = 60.0
-offset_right = 1321.0
-offset_bottom = 449.0
+offset_left = 726.8334
+offset_top = 53.752655
+offset_right = 1342.8334
+offset_bottom = 442.75266
 texture_normal = ExtResource("37_come4")
 script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK General Arden Toy Üretim Kampı:"
+bolge_detayi = "Enerji malzemeleri ve enerji üretiminde uzmanlaşılmıştır. En yeni kurulan kamptır.
+Müfettiş: Ayberk Petek
+"
 
 [node name="ulusal_huzur uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=407881024]
+show_behind_parent = true
 layout_mode = 0
 offset_left = 1386.9999
 offset_top = 508.00003
@@ -850,6 +873,11 @@ offset_right = 1730.9999
 offset_bottom = 758.0
 texture_normal = ExtResource("38_h8e4i")
 script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusun Huzuru Üretim Kampı:"
+bolge_detayi = "UÜSK Ulusun Huzuru Üretim Kampı:
+UMMK tarafından Terör ve Kaos Listesi’ne alınmış ve yok edilmiştir. Yaşanılamaz haldedir, sadece ismi kaydı devam eder.
+Müfettiş: NA
+"
 
 [node name="BilgiPaneli" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=1470727165]
 unique_name_in_owner = true
@@ -869,14 +897,20 @@ offset_left = -7.3312645
 offset_top = 4.3867855
 offset_right = 385.41507
 offset_bottom = 148.05424
+theme_override_fonts/font = ExtResource("41_d2t1y")
+theme_override_font_sizes/font_size = 40
+autowrap_mode = 2
 
 [node name="BolgeDetayi" type="Label" parent="OyunArayuzu/HaritaEkrani/BilgiPaneli" unique_id=283944628]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = -9.425911
-offset_top = 142.57076
+offset_top = 266.49765
 offset_right = 388.55707
 offset_bottom = 949.7407
+theme_override_fonts/font = ExtResource("42_gngh3")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
 visible = false
