@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="LapisJamBarumLand"
+run/main_scene="res://deneme.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [physics]
 

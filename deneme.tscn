@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://8868lknc4hnc"]
+
+[ext_resource type="Texture2D" uid="uid://b7bcdnqkn831i" path="res://bina texture.png" id="5_tlklb"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ua3w8"]
+load_path = "res://.godot/imported/white_rough_plaster_diff_4k.jpg-ea2dcd2893b4bdc4226e9333f152fe73.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlklb"]
+albedo_texture = SubResource("CompressedTexture2D_ua3w8")
+
+[sub_resource type="BoxMesh" id="BoxMesh_h6a0u"]
+size = Vector3(4, 10, 0.1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1yjh8"]
+load_path = "res://.godot/imported/rough_pine_door_diff_4k.jpg-e989f7161bc03817a04e3e4476e0604c.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6a0u"]
+albedo_texture = SubResource("CompressedTexture2D_1yjh8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_756oi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rqf73"]
+material = SubResource("StandardMaterial3D_756oi")
+size = Vector3(0.5, 0.75, 0.1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0noen"]
+load_path = "res://.godot/imported/painted_metal_shutter_diff_4k.jpg-a96698cd58016330655d316f78f61fc2.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u18ft"]
+albedo_texture = SubResource("CompressedTexture2D_0noen")
+metallic = 1.0
+metallic_texture = SubResource("CompressedTexture2D_0noen")
+roughness_texture = SubResource("CompressedTexture2D_0noen")
+
+[sub_resource type="SphereMesh" id="SphereMesh_xh7p1"]
+material = SubResource("StandardMaterial3D_u18ft")
+radius = 0.025
+height = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s20iv"]
+albedo_texture = SubResource("CompressedTexture2D_ua3w8")
+
+[sub_resource type="BoxMesh" id="BoxMesh_bnfl7"]
+material = SubResource("StandardMaterial3D_s20iv")
+size = Vector3(4.03, 0.1, 4.03)
+
+[node name="Node3D" type="Node3D" unique_id=2003346646]
+
+[node name="Node3D3" type="Node3D" parent="." unique_id=749238335]
+
+[node name="bina20" type="MeshInstance3D" parent="Node3D3" unique_id=1757716189]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -17.026878, 5.123, -6.7856665)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="kapi" type="MeshInstance3D" parent="Node3D3/bina20" unique_id=281002755]
+transform = Transform3D(0.00963141, 0.0084970035, -0.9999171, -0.0012589797, 0.99996096, 0.008485285, 0.99995124, 0.0011771361, 0.00964175, 2.0371056, -4.619804, 0.09188366)
+material_override = SubResource("StandardMaterial3D_h6a0u")
+mesh = SubResource("BoxMesh_rqf73")
+
+[node name="kapikolu" type="MeshInstance3D" parent="Node3D3/bina20/kapi" unique_id=552842081]
+transform = Transform3D(1, 0, 1.6763806e-08, -4.656613e-10, 1, -1.7462298e-10, -1.6763806e-08, -3.4924597e-10, 1, 0.1360724, 0.014227062, -0.0690155)
+mesh = SubResource("SphereMesh_xh7p1")
+
+[node name="Decal" type="Decal" parent="Node3D3/bina20" unique_id=71025247]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D3/bina20" unique_id=2129724645]
+transform = Transform3D(1, 0, 0, 0, 0.99999905, 0, 0, 0, 0.99999905, -0.004, 5.11, 1.996)
+mesh = SubResource("BoxMesh_bnfl7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D3/bina20" unique_id=1796929166]
+transform = Transform3D(1, 0, 0, 0, 0.9999984, 0, 0, 0, 0.9999984, 8.186844, 5.1099997, 6.7315426)
+mesh = SubResource("BoxMesh_bnfl7")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Node3D3/bina20" unique_id=1635386224]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 0.999998, -0.051, 5.11, 11.56)
+mesh = SubResource("BoxMesh_bnfl7")
+
+[node name="bina21" type="MeshInstance3D" parent="Node3D3" unique_id=720867961]
+transform = Transform3D(0.015044153, 0, -0.99988693, 0, 0.9999999, 0, 0.99988693, 0, 0.015044123, -19.026878, 5.123, -4.7856665)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D3/bina21" unique_id=264027315]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina22" type="MeshInstance3D" parent="Node3D3" unique_id=1231921250]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -17.026878, 5.123, -2.7856665)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D3/bina22" unique_id=519184492]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina23" type="MeshInstance3D" parent="Node3D3" unique_id=391691501]
+transform = Transform3D(0.017853817, 0, 0.99984056, 0, 0.9999999, 0, -0.99984056, 0, 0.017853813, -15.026876, 5.123, -4.7856665)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D3/bina23" unique_id=2005995744]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="Node3D2" type="Node3D" parent="." unique_id=1702101148]
+transform = Transform3D(0.015044153, 0, -0.99988693, 0, 0.9999998, 0, 0.9998869, 0, 0.015044122, -10.84487, 5.123, -1.1920929e-07)
+
+[node name="bina16" type="MeshInstance3D" parent="Node3D2" unique_id=1582059839]
+transform = Transform3D(0.015044121, 0, 0.9998868, 0, 1.0000001, 0, -0.9998868, 0, 0.015044151, 2.713468, 0, 6.2235346)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D2/bina16" unique_id=1661476723]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina17" type="MeshInstance3D" parent="Node3D2" unique_id=45388882]
+transform = Transform3D(1.0000001, 0, 9.313226e-10, 0, 1.0000001, 0, 9.313226e-10, 0, 1.0000001, 4.683154, 0, 8.253396)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D2/bina17" unique_id=436809440]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina18" type="MeshInstance3D" parent="Node3D2" unique_id=1711248357]
+transform = Transform3D(0.015044121, 0, 0.9998868, 0, 1.0000001, 0, -0.9998868, 0, 0.015044151, 6.7130156, 0, 6.2837114)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D2/bina18" unique_id=887458059]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina19" type="MeshInstance3D" parent="Node3D2" unique_id=1300279022]
+transform = Transform3D(-0.99945885, 0, 0.032893516, 0, 1.0000001, 0, -0.03289355, 0, -0.9994588, 4.7433305, 0, 4.253847)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D2/bina19" unique_id=483938512]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1050411208]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -8.84487, 5.123, -2)
+
+[node name="bina12" type="MeshInstance3D" parent="Node3D" unique_id=743691518]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="kapi" type="MeshInstance3D" parent="Node3D/bina12" unique_id=539581025]
+transform = Transform3D(0.00963141, 0.0084970035, -0.9999171, -0.0012589797, 0.99996096, 0.008485285, 0.99995124, 0.0011771361, 0.00964175, 2.0371056, -4.619804, 0.09188366)
+material_override = SubResource("StandardMaterial3D_h6a0u")
+mesh = SubResource("BoxMesh_rqf73")
+
+[node name="kapikolu" type="MeshInstance3D" parent="Node3D/bina12/kapi" unique_id=1343823577]
+transform = Transform3D(1, 0, 1.6763806e-08, -4.656613e-10, 1, -1.7462298e-10, -1.6763806e-08, -3.4924597e-10, 1, 0.1360724, 0.014227062, -0.0690155)
+mesh = SubResource("SphereMesh_xh7p1")
+
+[node name="Decal" type="Decal" parent="Node3D/bina12" unique_id=1182021739]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina13" type="MeshInstance3D" parent="Node3D" unique_id=938374267]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 4)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D/bina13" unique_id=1775360475]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina14" type="MeshInstance3D" parent="Node3D" unique_id=1906315193]
+transform = Transform3D(0.017853817, 0, 0.99984056, 0, 0.9999999, 0, -0.99984056, 0, 0.017853813, 2.0000005, 0, 2)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D/bina14" unique_id=1456915032]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
+
+[node name="bina15" type="MeshInstance3D" parent="Node3D" unique_id=2053571896]
+transform = Transform3D(0.015044153, 0, -0.99988693, 0, 0.9999999, 0, 0.99988693, 0, 0.015044123, -2, 0, 2)
+material_override = SubResource("StandardMaterial3D_tlklb")
+mesh = SubResource("BoxMesh_h6a0u")
+
+[node name="Decal" type="Decal" parent="Node3D/bina15" unique_id=555364540]
+transform = Transform3D(-1, -8.7422805e-08, -4.37114e-08, 4.371138e-08, 1.9106857e-15, -1, 8.742276e-08, -1.0000001, 1.9106855e-15, -0.008479118, 0.15326452, 0.10597086)
+size = Vector3(4, 4, 10)
+texture_albedo = ExtResource("5_tlklb")
+texture_orm = ExtResource("5_tlklb")
+texture_emission = ExtResource("5_tlklb")
