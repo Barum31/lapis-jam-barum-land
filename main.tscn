@@ -19,6 +19,9 @@
 [ext_resource type="Texture2D" uid="uid://c71vc1bsqcyu3" path="res://maliye ön.png" id="17_d13ii"]
 [ext_resource type="Texture2D" uid="uid://djn05ivm5oda2" path="res://bina texture 3.png" id="18_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://b4r35slt75xpo" path="res://bina texture.png" id="19_0odxb"]
+[ext_resource type="Texture2D" uid="uid://b8insmih0yi1q" path="res://event button.png" id="20_getpj"]
+[ext_resource type="Texture2D" uid="uid://bfdsnit0dno2w" path="res://üst text.png" id="21_ryguw"]
+[ext_resource type="Texture2D" uid="uid://duf03h0fu6s7r" path="res://abdu.png" id="22_d13ii"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -634,6 +637,7 @@ near = 0.01
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1496495054]
 
 [node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("6_7mycd")]
+visible = false
 script = ExtResource("7_272bh")
 
 [node name="depolar" type="Node3D" parent="." unique_id=787899260]
@@ -2434,10 +2438,46 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 
 material_override = SubResource("StandardMaterial3D_h8e4i")
 mesh = SubResource("QuadMesh_ok6jj")
 
-[node name="Control" type="Control" parent="." unique_id=1701323838]
+[node name="event uı" type="Control" parent="." unique_id=1701323838]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="secenekler" type="VBoxContainer" parent="event uı" unique_id=1673837712]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 700.0
+offset_right = 1718.0
+offset_bottom = 1020.0
+
+[node name="secenek1" type="Button" parent="event uı/secenekler" unique_id=1309360972]
+layout_mode = 2
+icon = ExtResource("20_getpj")
+flat = true
+
+[node name="secenek2" type="Button" parent="event uı/secenekler" unique_id=324398124]
+layout_mode = 2
+icon = ExtResource("20_getpj")
+flat = true
+
+[node name="secenek3" type="Button" parent="event uı/secenekler" unique_id=491692398]
+layout_mode = 2
+icon = ExtResource("20_getpj")
+flat = true
+
+[node name="secenek4" type="Button" parent="event uı/secenekler" unique_id=41866593]
+layout_mode = 2
+icon = ExtResource("20_getpj")
+flat = true
+
+[node name="event text" type="Sprite2D" parent="." unique_id=881211418]
+position = Vector2(961, 536)
+texture = ExtResource("21_ryguw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1195991057]
+position = Vector2(1568.6875, 253.29836)
+scale = Vector2(0.399126, 0.399126)
+texture = ExtResource("22_d13ii")
 
 [editable path="Map"]
