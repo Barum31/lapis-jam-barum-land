@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://c7kv5ay4e8qna"]
+
+[ext_resource type="Script" uid="uid://w5f7mamp0afv" path="res://GameEvent.gd" id="1_hc7io"]
+
+[resource]
+script = ExtResource("1_hc7io")
+event_text = "Ahşap ve Metal üretim tesisleri aynı anda bütçe istediler."
+options = Array[String](["Ahşap üretim tesisine bütçeyi ver:+100 ahşap -100 para – 100 metal", "Metal üretim tesisine bütçeyi ver:+100 metal  -100 para  – 100 Ahşap", "İki tesise de bütçeyi ver:+ 100 metal +100 ahşap  – 200 para"])
+effects_list = Array[Dictionary]([{
+"ahsap": 100,
+"metal": -100,
+"para": -100
+}, {
+"ahsap": -100,
+"metal": 100,
+"para": -100
+}, {
+"ahsap": 100,
+"metal": 100,
+"para": -200
+}])
+metadata/_custom_type_script = "uid://w5f7mamp0afv"

@@ -58,8 +58,8 @@
 [ext_resource type="Texture2D" uid="uid://6nd2p7wlasj6" path="res://map side.png" id="41_vke2r"]
 [ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
 [ext_resource type="Script" uid="uid://bia7mr4r1qthr" path="res://event.gd" id="58_ruth0"]
+[ext_resource type="PackedScene" uid="uid://kffj1ecnvrw6" path="res://EventButton.tscn" id="59_rm4vd"]
 [ext_resource type="Texture2D" uid="uid://bfdsnit0dno2w" path="res://üst text.png" id="59_ruth0"]
-[ext_resource type="Texture2D" uid="uid://3jxabbmest3n" path="res://button_1.png" id="59_uit24"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -3020,32 +3020,32 @@ offset_top = 700.0
 offset_right = 1718.0
 offset_bottom = 1020.0
 
-[node name="secenek1" type="Button" parent="Event/secenekler" unique_id=1998680524]
+[node name="secenek1" parent="Event/secenekler" unique_id=187040324 instance=ExtResource("59_rm4vd")]
 layout_mode = 2
-icon = ExtResource("59_uit24")
-flat = true
-
-[node name="secenek2" type="Button" parent="Event/secenekler" unique_id=625888685]
-layout_mode = 2
-icon = ExtResource("59_uit24")
-flat = true
-
-[node name="secenek3" type="Button" parent="Event/secenekler" unique_id=521821334]
-layout_mode = 2
-icon = ExtResource("59_uit24")
-flat = true
-
-[node name="secenek4" type="Button" parent="Event/secenekler" unique_id=479286266]
-layout_mode = 2
-icon = ExtResource("59_uit24")
-flat = true
-
-[node name="event_text" type="Sprite2D" parent="Event" unique_id=1321953117]
-position = Vector2(961, 536)
-texture = ExtResource("59_ruth0")
 
 [node name="portre" type="Sprite2D" parent="Event" unique_id=79289563]
 position = Vector2(1568.688, 253.298)
+
+[node name="TextureRect" type="TextureRect" parent="Event" unique_id=1982617182]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("59_ruth0")
+
+[node name="event_text" type="Label" parent="Event/TextureRect" unique_id=1437579218]
+layout_mode = 0
+offset_left = 1612.0001
+offset_top = 264.00003
+offset_right = 1724.7268
+offset_bottom = 290.01956
+scale = Vector2(-13.381169, -6.047294)
+
+[node name="speaker_label" type="Label" parent="Event/TextureRect" unique_id=1421524282]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 14.0
+offset_right = 412.0
+offset_bottom = 89.0
 
 [connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
 

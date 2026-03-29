@@ -12,6 +12,7 @@ var current_tick = 0
 @onready var moralL = $"OyunArayuzu/UI/ÜstMenü/Moral"
 @onready var nufusL = $"OyunArayuzu/UI/ÜstMenü/Nufus"
 @onready var ui =$OyunArayuzu/UI
+var game_timer : Timer
 var kaynaklar = {
 	"moral": 100,
 	"nufus": 50,
@@ -71,7 +72,7 @@ func _on_tick_timeout():
 	current_tick += 1
 	kaynak_guncelle()
 	ui_guncelle()
-
+	apply_tick_mechanics()
 
 signal tick_changed(new_tick_value)
 func kaynak_guncelle():
@@ -94,14 +95,17 @@ func _on_texture_button_start_pressed() -> void:
 	animation_player.play("MenuZoom")
 func apply_tick_mechanics():
 	# Örn: Her 4 tick'te bir %50 ihtimalle event çıksın
-	if current_tick % 4 == 0:
+	if current_tick % 1 == 0:
 		var sans = randf()
-		if sans > 0.7:
+		if sans > 0:
 			tetikle_rastgele_event()
+			print("event")
 
 func tetikle_rastgele_event():
 	# Klasördeki event dosyalarından birini rastgele seç (Basit örnek)
-	var event_listesi = ["res://Events/Aclik.tres", "res://Events/Firtina.tres"]
+	var event_listesi = ["res://Events/konusma_1.tres", 
+	"res://Events/butce_1.tres"]
+	
 	var secilen_path = event_listesi.pick_random()
 	var event_verisi = load(secilen_path)
 	
@@ -115,3 +119,11 @@ func apply_event_effects(incoming_effects: Dictionary):
 			kaynaklar[key] += incoming_effects[key]
 	# Senin yazdığın fonksiyonu çağırarak ekrandaki Labeled'ları güncelle
 	ui_guncelle()
+func zamani_durdur():
+	if game_timer:
+		game_timer.paused =true
+		print("Zaman durduruldu")
+func zamani_baslat():
+	if game_timer:
+		game_timer.paused=false
+		print("Zaman başlatıldı")

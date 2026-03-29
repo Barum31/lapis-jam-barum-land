@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://kffj1ecnvrw6"]
+
+[ext_resource type="Texture2D" uid="uid://3jxabbmest3n" path="res://button_1.png" id="1_yiwbm"]
+
+[node name="secenek1" type="Button" unique_id=187040324]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=272618471]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_yiwbm")
+
+[node name="Label" type="Label" parent="." unique_id=1506693515]
+layout_mode = 0
+offset_right = 1497.0
+offset_bottom = 66.0

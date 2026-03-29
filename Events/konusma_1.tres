@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GameEvent" format=3 uid="uid://gawrngtq22pc"]
+
+[ext_resource type="Script" uid="uid://w5f7mamp0afv" path="res://GameEvent.gd" id="1_e3jds"]
+
+[resource]
+script = ExtResource("1_e3jds")
+event_text = "Kasım Lam ve Sakine As seninle konuşmak için aynı anda geldiler."
+options = Array[String]([" Önce Kasım Lam’ı dinle: +5 Kasım Lam ilişkisi -5 İşçi Zümreleri ilişkisi", "Önce Sakine As’ı dinle:-15 Kasım Lam ilişkisi+ 10 İşçi Zümreleri ilişkisi"])
+effects_list = Array[Dictionary]([{
+"kasim_lam_iliski": 5,
+"zumre_iliski": -5
+}, {
+"kasim_lam_iliski": -15,
+"zumre_iliski": 10
+}])
+metadata/_custom_type_script = "uid://w5f7mamp0afv"
