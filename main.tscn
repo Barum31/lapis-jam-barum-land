@@ -7,24 +7,35 @@
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://co7hptuvab5rr" path="res://üst menü.png" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://os0u6tk8p07e" path="res://sol menü.png" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://6nd2p7wlasj6" path="res://map side.png" id="7_272bh"]
 [ext_resource type="Script" uid="uid://dcsvvnipcrula" path="res://sag_ust_menu.gd" id="8_074og"]
-[ext_resource type="Texture2D" uid="uid://bmef1c80o51he" path="res://menu button.png" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://blyvyidg5mw3l" path="res://setting button.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://dwrf74dlw8uav" path="res://sound off.png" id="10_w48qg"]
+[ext_resource type="Texture2D" uid="uid://dv1oeafmisrn" path="res://fabrika arka texture.png" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://bfvh33ndjh3wi" path="res://depo arka.png" id="9_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://luuph4gjxf8x" path="res://depo yan.png" id="10_w48qg"]
 [ext_resource type="Script" path="res://history_book.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://c2pyilpgvoigj" path="res://sound on.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://dvmddi66cxwuf" path="res://history book.png" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://ciigmwg131r76" path="res://catı.png" id="11_vivmo"]
+[ext_resource type="Texture2D" uid="uid://cynecaiji53bc" path="res://hastane ön.png" id="12_2cqfq"]
 [ext_resource type="Script" path="res://setting_button.gd" id="12_cegan"]
+[ext_resource type="Texture2D" uid="uid://d3rutpib1v5e5" path="res://hastane 3.png" id="13_cegan"]
 [ext_resource type="Texture2D" uid="uid://cfv8pys5vs5e7" path="res://time menu.png" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://ck4ncfb4s1g6" path="res://hastane catı.png" id="14_82xsv"]
 [ext_resource type="Texture2D" uid="uid://bvmrn4dvpp0jw" path="res://time 1x.png" id="14_yaehf"]
 [ext_resource type="Texture2D" uid="uid://bru7p8rhay1l" path="res://time 2x.png" id="15_074og"]
+[ext_resource type="Texture2D" uid="uid://diyybxen0516g" path="res://maliye catı.png" id="15_getpj"]
 [ext_resource type="Texture2D" uid="uid://bnc0cpiqeyor" path="res://time 3x.png" id="16_cegan"]
+[ext_resource type="Texture2D" uid="uid://b5rt6fqtvyy8t" path="res://maliye.png" id="16_ryguw"]
+[ext_resource type="Texture2D" uid="uid://c71vc1bsqcyu3" path="res://maliye ön.png" id="17_d13ii"]
+[ext_resource type="Texture2D" uid="uid://djn05ivm5oda2" path="res://bina texture 3.png" id="18_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://bmef1c80o51he" path="res://menu button.png" id="18_qnost"]
+[ext_resource type="Texture2D" uid="uid://b4r35slt75xpo" path="res://bina texture.png" id="19_0odxb"]
 [ext_resource type="Script" path="res://time_menu.gd" id="20_d13ii"]
 [ext_resource type="Script" path="res://sound_off.gd" id="20_ryguw"]
+[ext_resource type="Texture2D" uid="uid://dvmddi66cxwuf" path="res://history book.png" id="20_wnkbs"]
 [ext_resource type="Script" path="res://sound_on.gd" id="21_getpj"]
 [ext_resource type="Script" path="res://time_1x.gd" id="22_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://blyvyidg5mw3l" path="res://setting button.png" id="22_f6a44"]
+[ext_resource type="Texture2D" uid="uid://dwrf74dlw8uav" path="res://sound off.png" id="24_0cbny"]
 [ext_resource type="Script" path="res://time_2x.gd" id="24_0odxb"]
+[ext_resource type="Texture2D" uid="uid://c2pyilpgvoigj" path="res://sound on.png" id="26_hrvbo"]
 [ext_resource type="Script" path="res://time_3x.gd" id="26_lswn8"]
 [ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
 [ext_resource type="Texture2D" uid="uid://b32o0ow10bjan" path="res://button.png" id="27_xuqvo"]
@@ -35,20 +46,6 @@
 [ext_resource type="Texture2D" uid="uid://duogs4d0nukbe" path="res://START BUTTON.png" id="33_ok6jj"]
 [ext_resource type="Texture2D" uid="uid://cb413ckasomll" path="res://SETTİNGS BUTTON.png" id="34_facbu"]
 [ext_resource type="Texture2D" uid="uid://ho8xbu88k88r" path="res://CREDİTS.png" id="35_b1qrp"]
-[ext_resource type="PackedScene" uid="uid://bskfhmys03lgq" path="res://Main_menu.tscn" id="6_7mycd"]
-[ext_resource type="Script" uid="uid://cbu647ei5w4vn" path="res://main_menu.gd" id="7_272bh"]
-[ext_resource type="Texture2D" uid="uid://dv1oeafmisrn" path="res://fabrika arka texture.png" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://bfvh33ndjh3wi" path="res://depo arka.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://luuph4gjxf8x" path="res://depo yan.png" id="10_w48qg"]
-[ext_resource type="Texture2D" uid="uid://djk5umg8oxvia" path="res://catı.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://cynecaiji53bc" path="res://hastane ön.png" id="12_2cqfq"]
-[ext_resource type="Texture2D" uid="uid://d3rutpib1v5e5" path="res://hastane 3.png" id="13_cegan"]
-[ext_resource type="Texture2D" uid="uid://ck4ncfb4s1g6" path="res://hastane catı.png" id="14_82xsv"]
-[ext_resource type="Texture2D" uid="uid://diyybxen0516g" path="res://maliye catı.png" id="15_getpj"]
-[ext_resource type="Texture2D" uid="uid://b5rt6fqtvyy8t" path="res://maliye.png" id="16_ryguw"]
-[ext_resource type="Texture2D" uid="uid://c71vc1bsqcyu3" path="res://maliye ön.png" id="17_d13ii"]
-[ext_resource type="Texture2D" uid="uid://djn05ivm5oda2" path="res://bina texture 3.png" id="18_1u8w0"]
-[ext_resource type="Texture2D" uid="uid://b7bcdnqkn831i" path="res://bina texture.png" id="19_0odxb"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -272,56 +269,6 @@ points = PackedVector3Array(0.01030159, -0.19991416, 0.10486464, 0.23693651, -0.
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rm4vd"]
 points = PackedVector3Array(0.20133922, -0.022, 0.060853984, 0.2936, 0.04268151, 0.061085485, 0.29873595, 0.04730477, 0.02246002, 0.29873595, -0.045409508, 0.02246002, 0.19574022, 0.04730477, -0.008450791, 0.19574022, -0.045409508, -0.008450791, 0.23694456, -0.045409508, 0.08426349, 0.22632585, 0.048013948, 0.084972665, 0.28843233, 0.04730477, -0.008450791, 0.28843233, -0.045409508, 0.07395384, 0.28843233, -0.045409508, -0.008450791, 0.19574022, 0.02669454, 0.06365326, 0.28843233, 0.04730477, 0.07395384, 0.22633137, -0.04610627, 0.08496025, 0.19437037, -0.04664261, 0.0009, 0.19437037, 0.048537873, 0.0009, 0.2936, -0.040786248, 0.061085485, 0.23694456, 0.04730477, 0.08426349)
 
-[sub_resource type="Animation" id="Animation_272bh"]
-resource_name = "MenuZoom"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MenuCamera:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-0.40020752, 299.4002, 300.42087), Vector3(-0.40020752, 111.23587, 109.293304)]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../..")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1.4666667),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"oyunu_baslat"
-}]
-}
-
-[sub_resource type="Animation" id="Animation_5vw27"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MenuCamera:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.40020752, 299.4002, 300.42087)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_come4"]
-_data = {
-&"MenuZoom": SubResource("Animation_272bh"),
-&"RESET": SubResource("Animation_5vw27")
-}
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaehf"]
 albedo_texture = ExtResource("8_dg77c")
 
@@ -390,6 +337,57 @@ size = Vector2(8, 8)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8e4i"]
 albedo_texture = ExtResource("19_0odxb")
+
+[sub_resource type="Animation" id="Animation_272bh"]
+resource_name = "MenuZoom"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087), Vector3(-0.40020752, 111.23587, 109.293304)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.4666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"oyunu_baslat"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_5vw27"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_come4"]
+_data = {
+&"MenuZoom": SubResource("Animation_272bh"),
+&"RESET": SubResource("Animation_5vw27")
+}
 
 [node name="main" type="Node3D" unique_id=847394524]
 script = ExtResource("1_seu75")
@@ -2522,7 +2520,7 @@ offset_top = 6.0
 offset_right = 1932.0
 offset_bottom = 80.0
 scale = Vector2(0.7000005, 0.7297297)
-texture = ExtResource("8_dg77c")
+texture = ExtResource("18_qnost")
 script = ExtResource("8_074og")
 
 [node name="MenuContainer" type="Control" parent="OyunArayuzu/UI/MenuButton" unique_id=614880985]
@@ -2539,7 +2537,7 @@ offset_top = 193.22224
 offset_right = 1621.2845
 offset_bottom = 287.22226
 scale = Vector2(1.1248325, 1.0204887)
-texture = ExtResource("12_2cqfq")
+texture = ExtResource("20_wnkbs")
 script = ExtResource("11_82xsv")
 
 [node name="SettingButton" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer" unique_id=557593443]
@@ -2549,7 +2547,7 @@ offset_top = 100.03704
 offset_right = 1623.9988
 offset_bottom = 184.03705
 scale = Vector2(0.9353734, 0.81569684)
-texture = ExtResource("9_ycdy4")
+texture = ExtResource("22_f6a44")
 script = ExtResource("12_cegan")
 
 [node name="SoundOff" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=1068132161]
@@ -2560,7 +2558,7 @@ offset_right = -30.854523
 offset_bottom = 82.24
 scale = Vector2(1.1794537, 1.2465957)
 mouse_filter = 0
-texture = ExtResource("10_w48qg")
+texture = ExtResource("24_0cbny")
 script = ExtResource("20_ryguw")
 
 [node name="SoundOn" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=500040024]
@@ -2571,7 +2569,7 @@ offset_right = -14.05452
 offset_bottom = 72.439995
 scale = Vector2(1.1637589, 1.2066097)
 mouse_filter = 0
-texture = ExtResource("11_vivmo")
+texture = ExtResource("26_hrvbo")
 script = ExtResource("21_getpj")
 
 [node name="TimeMenu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1713432950]
@@ -2705,7 +2703,6 @@ offset_right = 613.99994
 offset_bottom = 1263.7383
 scale = Vector2(0.5658537, 0.5687022)
 mouse_filter = 0
-texture = ExtResource("7_272bh")
 script = ExtResource("27_a6jrf")
 
 [node name="HaritaEkrani" type="TextureRect" parent="OyunArayuzu" unique_id=1674314826]
@@ -2785,8 +2782,8 @@ current = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OyunArayuzu/MainMenu" unique_id=168352840]
 libraries/ = SubResource("AnimationLibrary_come4")
 
-[connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
-
 [node name="etkileşimsiz alan" type="Node3D" parent="." unique_id=717214464]
+
+[connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
 
 [editable path="Map"]
