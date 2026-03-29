@@ -62,6 +62,8 @@
 [ext_resource type="FontFile" uid="uid://dol2bbxwl1qps" path="res://Montserrat-Black.ttf" id="41_d2t1y"]
 [ext_resource type="Texture2D" uid="uid://bcdmwxao711cx" path="res://map side.png" id="41_vke2r"]
 [ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
+[ext_resource type="Script" uid="uid://cdc2fttedfg5h" path="res://sol_menü.gd" id="43_sm6fg"]
+[ext_resource type="FontFile" uid="uid://c3f4dxc572oix" path="res://Montserrat-Regular.ttf" id="63_b17eg"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -417,6 +419,15 @@ _data = {
 &"RESET": SubResource("Animation_5vw27")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_ntx8l"]
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_b17eg"]
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 2)
+
 [sub_resource type="Environment" id="Environment_vke2r"]
 background_mode = 1
 background_color = Color(0.3820807, 7.52043e-07, 1.6845763e-07, 1)
@@ -428,301 +439,323 @@ script = ExtResource("1_seu75")
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 1204349815) index="0" unique_id=1789515475]
+[node name="UMMK Denetim Binası" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 1204349815) index="0" unique_id=1789515475]
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "UMMK Denetim Binası"
+bina_detay_bilgisi = "UMMK Üretim Müfettişi Kasım Lam:
+ Kasım Lam orta yaşlı, sinekkaydı tıraşsız dışarı çıkmayan, subay tıraşına ve kemikli bir yüze sahip bakımlı bir UMMK Subayı’dır.  Kaçak ve lüks mallara tutkun, acımasız ve mizahi bir yapıya sahip bir adam olan Kasım Lam’ın işçiler arasındaki lakabı “ Sırtlan Gülüş Kasım’dır” ;  bu lakabın sebebi Kasım’ın onlara ve ailelerine ‘yeniden eğitim’ adı altında yaptığı fiziksel ve psikolojik işkenceler sırasında yüzünden eksik olmayan o sinsi gülüşüdür. Kasım kemikli yüzü acımasız yüzü ve  gülerken attığı sarkastik bakışlar ile karşısında olan kişiye “ HAYATIM TEHLİKEDE!”  hissini ustalıkla verir. 
+"
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/dekanlık/StaticBody3D" unique_id=1342279283]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/dekanlık/UMMK Denetim Binası" unique_id=1342279283]
 transform = Transform3D(0.9999998, -7.450581e-09, -1.4210855e-14, 2.3841858e-07, 0.99999994, -8.526513e-14, 0, 3.1086245e-15, 0.9999999, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_1bvp3")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/dekanlık/StaticBody3D" unique_id=2084848350]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/dekanlık/UMMK Denetim Binası" unique_id=2084848350]
 transform = Transform3D(0.99999994, -3.7252903e-09, -7.1054274e-15, 2.3841858e-07, 1, -4.2632564e-14, 0, 1.7763568e-15, 0.99999994, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_lquwl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/dekanlık/StaticBody3D" unique_id=312283590]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/dekanlık/UMMK Denetim Binası" unique_id=312283590]
 transform = Transform3D(0.99999994, -3.7252903e-09, -7.1054274e-15, 2.3841858e-07, 1, -4.2632564e-14, 0, 1.7763568e-15, 0.99999994, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_7mycd")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 1882103670) index="0" unique_id=734545830]
+[node name="UMMK Disiplin Alanı" type="StaticBody3D" parent="Map/futbol" parent_id_path=PackedInt32Array(953951384, 1882103670) index="0" unique_id=734545830]
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "UMMK Disiplin Alanı"
+bina_detay_bilgisi = "UMMK İnfaz Memurları:
+ Simsiyah çarşaflar ve maskeler giyinen, vücut hatları ve yüzleri belli olmayan, dilleri kesilmiş ve özel olarak öldürmek için eğitilmiş UMMK İnfaz Memurları; duygu hissetmezler, acımazlar, sevmezler ve üzülmezler. Onlar sadece başlarındaki UMMK Subayı’nın emirlerini yerine getirmek için yaşarlar ve ölürler.
+"
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1533340794]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1533340794]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_ycdy4")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1535378040]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1535378040]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_w48qg")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1663603302]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1663603302]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_vivmo")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1428724808]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1428724808]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_2cqfq")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=941814174]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=941814174]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_82xsv")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1629006323]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1629006323]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_getpj")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=129963027]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=129963027]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_ryguw")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1870824040]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1870824040]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_d13ii")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1441254768]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1441254768]
 transform = Transform3D(0.9999999, 0, -1.4210855e-14, -2.9802322e-08, 1, 1.4210855e-14, -7.1054274e-15, 2.842171e-14, 1.0000002, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_1u8w0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1795136067]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1795136067]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_0odxb")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=326287896]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=326287896]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_lswn8")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=1088516802]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=1088516802]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_a6jrf")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=2140083578]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=2140083578]
 transform = Transform3D(0.9999999, -2.9802322e-08, 7.1054274e-15, -2.9802322e-08, 0.99999994, 7.1054274e-15, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_xuqvo")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/futbol/StaticBody3D" unique_id=118309795]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/futbol/UMMK Disiplin Alanı" unique_id=118309795]
 transform = Transform3D(0.9999999, 0, -7.1054274e-15, -2.9802322e-08, 1, 7.1054274e-15, -3.5527137e-15, 1.4210855e-14, 1.0000001, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_qsp4k")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1681685293) index="0" unique_id=1940350538]
+[node name="Güvenlik Noktası" type="StaticBody3D" parent="Map/güvenlik" parent_id_path=PackedInt32Array(953951384, 1681685293) index="0" unique_id=1940350538]
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "Güvenlik Noktası"
+bina_detay_bilgisi = "GİT!"
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=837400100]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=837400100]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_pjyto")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=531770265]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=531770265]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_sm6fg")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=190835915]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=190835915]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_b17eg")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1067866348]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1067866348]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_ntx8l")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1669060049]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1669060049]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_uatky")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1104144774]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1104144774]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_rqtf5")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1082119225]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1082119225]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_1vm84")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=384869285]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=384869285]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_wu3dr")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1663593267]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1663593267]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cyx1q")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1167777854]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1167777854]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_0dhbp")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1485878744]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1485878744]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_jx0wj")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=124593568]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=124593568]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_kkkcx")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1246245524]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1246245524]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_34ol3")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1198885972]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1198885972]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_c2n8d")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1364339427]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1364339427]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_wy5fy")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/güvenlik/StaticBody3D" unique_id=1628971619]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/güvenlik/Güvenlik Noktası" unique_id=1628971619]
 transform = Transform3D(1, 3.7252903e-09, -2.910383e-11, 0, 1, -4.656613e-10, 1.4551915e-11, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_gx4rg")
 
 [node name="hazırlık" parent="Map" index="5" unique_id=121404992]
 transform = Transform3D(3314.3838, 0.37831554, 1.5327657e-08, 0, -0.00015630406, 3314.3826, 0.35065603, -3575.82, -0.00014487626, -78.10832, -0.6716414, -46.16445)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/hazırlık" index="0" unique_id=142895308]
+[node name="UÜSK Eğitim Binası" type="StaticBody3D" parent="Map/hazırlık" index="0" unique_id=142895308]
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "UÜSK Eğitim Binası"
+bina_detay_bilgisi = " UÜSK Akademisyeni Doç.Dr. Regaip Kuru:
+ Doç. Dr. Regaip Kuru  erken yaşlılık döneminde, hafif kilolu, kel ve gözlüklü bir akademisyendir. Yeni yönetime alışmaya çalışan, nasırına basılmış adam gibi huysuz  ve demokrasi kadar eskide kalmış bir adamdır. Devrimden önce eğitim verdiği kurumda ‘ Terör ve kaosa yol açabilecek bilgiler yayma’ suçlamasıyla UÜSK kampına yollanmıştır. Buraya geldikten sonra Kasım Lam’ın meşhur  ‘Yeniden Eğitim’ programıyla tanışmış ve bu eğitim sonucunda sol kolunu kaybetmiştir. O günden beri sadece USAK tarafından verilen bilgileri okumak ve öğretmek ile ilgilenmiş, yeni bir çalışmada bulunmamıştır.
+"
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/hazırlık/StaticBody3D" unique_id=987035636]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/hazırlık/UÜSK Eğitim Binası" unique_id=987035636]
 transform = Transform3D(1, 7.275958e-12, 0, 7.275958e-12, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_yaehf")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/hazırlık/StaticBody3D" unique_id=220100075]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/hazırlık/UÜSK Eğitim Binası" unique_id=220100075]
 transform = Transform3D(1, 7.275958e-12, 0, 7.275958e-12, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_074og")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/hazırlık/StaticBody3D" unique_id=91246738]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/hazırlık/UÜSK Eğitim Binası" unique_id=91246738]
 transform = Transform3D(1, 7.275958e-12, 0, 7.275958e-12, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_cegan")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 511732219) index="0" unique_id=117841318]
+[node name="UÜSK Üretim Binası" type="StaticBody3D" parent="Map/mühendislik" parent_id_path=PackedInt32Array(953951384, 511732219) index="0" unique_id=117841318]
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "UÜSK Üretim Binası"
+bina_detay_bilgisi = "Ustabaşı Kemal Kabil yuvarlak yüzlü, seyrek sakallı, hafif kilolu, kısa bir metal ustasıdır. Hakkında sadece Ulusal Devrim’den önce mühendis olduğu ve lüks düşkünü olduğu bilinir.
+"
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=958356969]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=958356969]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_272bh")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=291602869]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=291602869]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_5vw27")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=1812195149]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=1812195149]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_kek77")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=64389624]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=64389624]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_4c57u")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=1626076379]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=1626076379]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_efxa6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/mühendislik/StaticBody3D" unique_id=1494298530]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/mühendislik/UÜSK Üretim Binası" unique_id=1494298530]
 transform = Transform3D(0.99999994, 0, 3.469447e-18, 0, 0.99999994, 0, -1.7347235e-18, 0, 1, 0, 0, 0)
 visible = false
 shape = SubResource("ConvexPolygonShape3D_dg77c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1863052537) index="0" unique_id=706274284]
+[node name="UÜSK Yemekhane Binası" type="StaticBody3D" parent="Map/sks" parent_id_path=PackedInt32Array(953951384, 1863052537) index="0" unique_id=706274284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0056079626, 0.01427722, 0.03142614)
 script = ExtResource("3_h2yge")
+bina_ozel_ismi = "UÜSK Yemekhane Binası"
+bina_detay_bilgisi = "UÜSK Aşçıbaşı Gülizar Tayf:
+   Gülizar Tayf orta yaşlı, oldukça zayıf, her haliyle çelimsiz bir aşçıbaşıdır. Kedi kadar ürkek, manik depresif ve altındaki aşçıların onu zehirlemeye çalıştığını düşünecek kadar paranoyak bir yapıya sahip olan Gülizar Tayf’ın bu hale gelmesinin tek sebebi Kasım Lam’dır.  Kasım Lam, Gülizar Tayf’ın eşini ve çocuklarını yemekhaneden erzak çalmak ile suçlamış; daha sonrasında onları Gülizar Tayf’ın gözleri önünde demir bir sopa ile döverek acımasızca katletmiştir. Kasım Lam, bununla kalmamış ve Gülizar Tayf’ı ‘yeniden eğitim’ programına sokmuştur. Bu ‘eğitimin’ sonucunda Gülizar Tayf, bugün bildiğimiz korkak, paranoyak, manik depresif  ve son derece çelimsiz olan zayıf insana dönüşmüştür.
+"
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1573940797]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1573940797]
 shape = SubResource("ConvexPolygonShape3D_kq58d")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1296549293]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1296549293]
 shape = SubResource("ConvexPolygonShape3D_seu75")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=44509042]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=44509042]
 shape = SubResource("ConvexPolygonShape3D_htxhm")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=829252943]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=829252943]
 shape = SubResource("ConvexPolygonShape3D_jq2sk")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1723096755]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1723096755]
 shape = SubResource("ConvexPolygonShape3D_4k2k6")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1613749784]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1613749784]
 shape = SubResource("ConvexPolygonShape3D_0rl1p")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=130348284]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=130348284]
 shape = SubResource("ConvexPolygonShape3D_ok6jj")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1057030670]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1057030670]
 shape = SubResource("ConvexPolygonShape3D_facbu")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1364357866]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1364357866]
 shape = SubResource("ConvexPolygonShape3D_b1qrp")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=4142441]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=4142441]
 shape = SubResource("ConvexPolygonShape3D_come4")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=981854007]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=981854007]
 shape = SubResource("ConvexPolygonShape3D_h8e4i")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1092642505]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1092642505]
 shape = SubResource("ConvexPolygonShape3D_4lmeg")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1788407049]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1788407049]
 shape = SubResource("ConvexPolygonShape3D_0cp0l")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=601937762]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=601937762]
 shape = SubResource("ConvexPolygonShape3D_d2t1y")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1751627185]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1751627185]
 shape = SubResource("ConvexPolygonShape3D_gngh3")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1951499946]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1951499946]
 shape = SubResource("ConvexPolygonShape3D_0n3wm")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=683723414]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=683723414]
 shape = SubResource("ConvexPolygonShape3D_qnost")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=635368172]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=635368172]
 shape = SubResource("ConvexPolygonShape3D_wnkbs")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1990514208]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1990514208]
 shape = SubResource("ConvexPolygonShape3D_f6a44")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=960364079]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=960364079]
 shape = SubResource("ConvexPolygonShape3D_0cbny")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=985003905]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=985003905]
 shape = SubResource("ConvexPolygonShape3D_hrvbo")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=75252561]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=75252561]
 shape = SubResource("ConvexPolygonShape3D_uypp3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=901582059]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=901582059]
 shape = SubResource("ConvexPolygonShape3D_blkrb")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=2122374265]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=2122374265]
 shape = SubResource("ConvexPolygonShape3D_abqjc")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=420635485]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=420635485]
 shape = SubResource("ConvexPolygonShape3D_6iyjs")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=2077509330]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=2077509330]
 shape = SubResource("ConvexPolygonShape3D_4w656")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=303622507]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=303622507]
 shape = SubResource("ConvexPolygonShape3D_e71vb")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1423768541]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1423768541]
 shape = SubResource("ConvexPolygonShape3D_rnkwl")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=595010015]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=595010015]
 shape = SubResource("ConvexPolygonShape3D_vke2r")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=487243977]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=487243977]
 shape = SubResource("ConvexPolygonShape3D_uit24")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=626168545]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=626168545]
 shape = SubResource("ConvexPolygonShape3D_ruth0")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="Map/sks/StaticBody3D" unique_id=1331498725]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1331498725]
 shape = SubResource("ConvexPolygonShape3D_rm4vd")
 
 [node name="zemin" parent="Map" index="9" unique_id=2008264063]
@@ -730,6 +763,10 @@ transform = Transform3D(3314.3794, 0.46707025, 9.646123e-08, 0, -0.0003792693, 3
 
 [node name="depolar" type="StaticBody3D" parent="Map" unique_id=958728404]
 script = ExtResource("9_cegan")
+bina_ozel_ismi = "UÜSK İşçi Blokları"
+bina_detay_bilgisi = "İşçi Blokları Yöneticisi Sakine As:
+Sakine As  gençliğinin baharında olan güzel, alımlı ve oldukça çekici bir kızdır. Ayrıca Sakine akıllı, sakin, anaç, işçilerin çıkarlarını kollayan ve kendini ‘Sosyalist’  olarak tanımlayan bir kızdır. Sakine bu ideolojiyi babasının yakın arkadaşı olan Doç.Dr.Regaip Kuru’dan öğrenmiş ve benimsemiştir. Bu ideolojisi onu işçiler arasında popüler hale getirmiş ve İşçi Blokları Yöneticiliğine kadar taşımıştır. Lakin bu görev sorumluluğun yanında tehlikelerinde beraberinde getirmiştir.
+"
 
 [node name="depo" type="Node3D" parent="Map/depolar" unique_id=1215764168]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.797, 20.7, 404.109)
@@ -850,6 +887,10 @@ shape = SubResource("BoxShape3D_82xsv")
 [node name="hastane" type="StaticBody3D" parent="Map" unique_id=1660611982]
 transform = Transform3D(-0.94832367, 0, 0.31730458, 0, 1, 0, -0.31730458, 0, -0.94832367, -7.6183777, 2.6044235, 265.86475)
 script = ExtResource("9_cegan")
+bina_ozel_ismi = "UÜSK Askeri Revir Binası"
+bina_detay_bilgisi = "Doktor Can Belgo:
+Doktordur, Kemal Lam ile aynı rütbeye sahiptir. Kimse ile ilgilenmez.
+"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/hastane" unique_id=81266686]
 transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 4.641426, 11.088492, 148.56322)
@@ -887,6 +928,9 @@ mesh = SubResource("QuadMesh_1u8w0")
 [node name="maliye" type="StaticBody3D" parent="Map" unique_id=1846918834]
 transform = Transform3D(0.19936793, 0, -0.9799246, 0, 1, 0, 0.9799246, 0, 0.19936793, -33.87367, 5.6574135, 123.54292)
 script = ExtResource("9_cegan")
+bina_ozel_ismi = " UÜSK Maliye Binası"
+bina_detay_bilgisi = "Maliyeci Mesut Koçakoğlu:
+Genel olarak muhasebecidir, Kemal Lam’dan çekinir. Sayılarla arası iyidir. Üzgün bir yapısı vardır."
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Map/maliye" unique_id=786835979]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01676941, 5.0215855, -0.007171631)
@@ -919,6 +963,10 @@ shape = SubResource("BoxShape3D_cegan")
 
 [node name="tokiler" type="StaticBody3D" parent="Map" unique_id=455542497]
 script = ExtResource("9_cegan")
+bina_ozel_ismi = "UÜSK İşçi Blokları"
+bina_detay_bilgisi = "İşçi Blokları Yöneticisi Sakine As:
+Sakine As  gençliğinin baharında olan güzel, alımlı ve oldukça çekici bir kızdır. Ayrıca Sakine akıllı, sakin, anaç, işçilerin çıkarlarını kollayan ve kendini ‘Sosyalist’  olarak tanımlayan bir kızdır. Sakine bu ideolojiyi babasının yakın arkadaşı olan Doç.Dr.Regaip Kuru’dan öğrenmiş ve benimsemiştir. Bu ideolojisi onu işçiler arasında popüler hale getirmiş ve İşçi Blokları Yöneticiliğine kadar taşımıştır. Lakin bu görev sorumluluğun yanında tehlikelerinde beraberinde getirmiştir.
+"
 
 [node name="toki" type="Node3D" parent="Map/tokiler" unique_id=1649371200]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -22.631344, 25.965492, 223.4244)
@@ -2340,7 +2388,6 @@ near = 0.01
 
 [node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
 unique_name_in_owner = true
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -2500,11 +2547,6 @@ text = "İLİSKİLER"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
-
-[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=556379589]
-position = Vector2(188.43752, 526.5)
-scale = Vector2(0.80493635, 0.9479638)
-texture = ExtResource("6_272bh")
 
 [node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1686905052]
 position = Vector2(247, 107.00001)
@@ -2781,7 +2823,73 @@ current = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OyunArayuzu/MainMenu" unique_id=168352840]
 libraries/ = SubResource("AnimationLibrary_come4")
 
+[node name="HubKatmani" type="CanvasLayer" parent="OyunArayuzu" unique_id=1351413791]
+layer = 5
+
+[node name="SolMenü" type="TextureRect" parent="OyunArayuzu/HubKatmani" unique_id=2043618943]
+z_index = 100
+custom_minimum_size = Vector2(300, 500)
+anchors_preset = -1
+anchor_top = 0.44722223
+anchor_bottom = 0.51474595
+offset_top = -204.21716
+offset_right = 471.0
+offset_bottom = 222.85724
+grow_vertical = 2
+scale = Vector2(1.0873142, 1.1244344)
+texture = ExtResource("6_272bh")
+script = ExtResource("43_sm6fg")
+
+[node name="Panel" type="Panel" parent="OyunArayuzu/HubKatmani/SolMenü" unique_id=233291606]
+layout_mode = 0
+offset_left = 0.9196968
+offset_top = 12.643837
+offset_right = 446.05325
+offset_bottom = 487.54932
+
+[node name="BinaIsmi" type="Label" parent="OyunArayuzu/HubKatmani/SolMenü/Panel" unique_id=2001768134]
+layout_mode = 0
+offset_left = 32.189407
+offset_top = 8.004017
+offset_right = 400.06836
+offset_bottom = 72.036224
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("38_ruth0")
+theme_override_font_sizes/font_size = 30
+label_settings = SubResource("LabelSettings_ntx8l")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="BinaBilgi" type="Label" parent="OyunArayuzu/HubKatmani/SolMenü/Panel" unique_id=1459787856]
+layout_mode = 0
+offset_left = 13.795441
+offset_top = 96.04831
+offset_right = 428.57898
+offset_bottom = 441.11075
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("63_b17eg")
+theme_override_font_sizes/font_size = 20
+label_settings = SubResource("LabelSettings_b17eg")
+autowrap_mode = 2
+
+[node name="KapatButonu" type="Button" parent="OyunArayuzu/HubKatmani/SolMenü" unique_id=1664659480]
+layout_mode = 0
+offset_left = 423.98047
+offset_top = 16.201183
+offset_right = 454.98047
+offset_bottom = 62.201183
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.9490196, 0, 0.9490196, 1)
+theme_override_fonts/font = ExtResource("41_d2t1y")
+theme_override_font_sizes/font_size = 30
+text = "X"
+flat = true
+
 [node name="CanvasLayer#MainMenu" parent="." unique_id=849037392 instance=ExtResource("32_htxhm")]
+visible = false
 offset_left = -6.0
 offset_top = 23.0
 offset_right = 651.0
@@ -3017,6 +3125,7 @@ mesh = SubResource("QuadMesh_ok6jj")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
 
 [node name="MainMenu" parent="CanvasLayer" unique_id=894189762 instance=ExtResource("32_htxhm")]
+visible = false
 
 [node name="etkileşimsiz alan2" type="Node3D" parent="." unique_id=2072421664]
 
