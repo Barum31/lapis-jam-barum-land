@@ -10,7 +10,7 @@ func _ready():
 	# Main düğümünü bul ve sinyale bağlan
 	# Main düğümünü bul ve sinyale bağlan
 	var main_node = get_tree().root.get_node("main")
-	main_node.tick_changed.connect(_on_game_tick_updated)
+	
 
 func _derin_tarama(dugum):
 	if dugum is MeshInstance3D:
@@ -85,5 +85,3 @@ func sondur():
 		if parca.mesh:
 			for i in parca.mesh.get_surface_count():
 				parca.set_surface_override_material(i, null)
-func _on_game_tick_updated(value):
-	print("!")

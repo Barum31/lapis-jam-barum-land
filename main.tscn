@@ -5,21 +5,21 @@
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://wkgj3htc4klh" path="res://üst menü.png" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://6i12o4beybqp" path="res://sol menü.png" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://bcdmwxao711cx" path="res://map side.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://co7hptuvab5rr" path="res://üst menü.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://os0u6tk8p07e" path="res://sol menü.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://6nd2p7wlasj6" path="res://map side.png" id="7_272bh"]
 [ext_resource type="Script" uid="uid://dcsvvnipcrula" path="res://sag_ust_menu.gd" id="8_074og"]
-[ext_resource type="Texture2D" uid="uid://glcf1eldo2tl" path="res://menu button.png" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://cdexq3alc208m" path="res://setting button.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://cblpb2na2laij" path="res://sound off.png" id="10_w48qg"]
+[ext_resource type="Texture2D" uid="uid://bmef1c80o51he" path="res://menu button.png" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://blyvyidg5mw3l" path="res://setting button.png" id="9_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://dwrf74dlw8uav" path="res://sound off.png" id="10_w48qg"]
 [ext_resource type="Script" path="res://history_book.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://ojlxee4u6vpy" path="res://sound on.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://dw0llujla6f5o" path="res://history book.png" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://c2pyilpgvoigj" path="res://sound on.png" id="11_vivmo"]
+[ext_resource type="Texture2D" uid="uid://dvmddi66cxwuf" path="res://history book.png" id="12_2cqfq"]
 [ext_resource type="Script" path="res://setting_button.gd" id="12_cegan"]
-[ext_resource type="Texture2D" uid="uid://cc6o1jm3ih8s2" path="res://time menu.png" id="13_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://jyidyxmld1iw" path="res://time 1x.png" id="14_yaehf"]
-[ext_resource type="Texture2D" uid="uid://bdkhamaqbpj1c" path="res://time 2x.png" id="15_074og"]
-[ext_resource type="Texture2D" uid="uid://6232xk5aji2p" path="res://time 3x.png" id="16_cegan"]
+[ext_resource type="Texture2D" uid="uid://cfv8pys5vs5e7" path="res://time menu.png" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://bvmrn4dvpp0jw" path="res://time 1x.png" id="14_yaehf"]
+[ext_resource type="Texture2D" uid="uid://bru7p8rhay1l" path="res://time 2x.png" id="15_074og"]
+[ext_resource type="Texture2D" uid="uid://bnc0cpiqeyor" path="res://time 3x.png" id="16_cegan"]
 [ext_resource type="Script" path="res://time_menu.gd" id="20_d13ii"]
 [ext_resource type="Script" path="res://sound_off.gd" id="20_ryguw"]
 [ext_resource type="Script" path="res://sound_on.gd" id="21_getpj"]
@@ -27,11 +27,14 @@
 [ext_resource type="Script" path="res://time_2x.gd" id="24_0odxb"]
 [ext_resource type="Script" path="res://time_3x.gd" id="26_lswn8"]
 [ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
-[ext_resource type="Texture2D" uid="uid://sg1fyut2w2i5" path="res://button.png" id="27_xuqvo"]
-[ext_resource type="Texture2D" uid="uid://cyvossrxg8sxe" path="res://map.png" id="28_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://b32o0ow10bjan" path="res://button.png" id="27_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://2kb1v6o4burh" path="res://map.png" id="28_qsp4k"]
 [ext_resource type="Script" path="res://geri_butonu.gd" id="28_xuqvo"]
-[ext_resource type="Texture2D" uid="uid://kxc6t167ajwn" path="res://cıkıs button.png" id="29_kq58d"]
-[ext_resource type="PackedScene" path="res://Main_menu.tscn" id="32_htxhm"]
+[ext_resource type="Texture2D" uid="uid://tx6p4vx4w88w" path="res://cıkıs button.png" id="29_kq58d"]
+[ext_resource type="Texture2D" uid="uid://m2jgu0a7tqmr" path="res://BARUMLAND TEXT.png" id="32_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://duogs4d0nukbe" path="res://START BUTTON.png" id="33_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://cb413ckasomll" path="res://SETTİNGS BUTTON.png" id="34_facbu"]
+[ext_resource type="Texture2D" uid="uid://ho8xbu88k88r" path="res://CREDİTS.png" id="35_b1qrp"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -254,6 +257,57 @@ points = PackedVector3Array(0.01030159, -0.19991416, 0.10486464, 0.23693651, -0.
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rm4vd"]
 points = PackedVector3Array(0.20133922, -0.022, 0.060853984, 0.2936, 0.04268151, 0.061085485, 0.29873595, 0.04730477, 0.02246002, 0.29873595, -0.045409508, 0.02246002, 0.19574022, 0.04730477, -0.008450791, 0.19574022, -0.045409508, -0.008450791, 0.23694456, -0.045409508, 0.08426349, 0.22632585, 0.048013948, 0.084972665, 0.28843233, 0.04730477, -0.008450791, 0.28843233, -0.045409508, 0.07395384, 0.28843233, -0.045409508, -0.008450791, 0.19574022, 0.02669454, 0.06365326, 0.28843233, 0.04730477, 0.07395384, 0.22633137, -0.04610627, 0.08496025, 0.19437037, -0.04664261, 0.0009, 0.19437037, 0.048537873, 0.0009, 0.2936, -0.040786248, 0.061085485, 0.23694456, 0.04730477, 0.08426349)
+
+[sub_resource type="Animation" id="Animation_272bh"]
+resource_name = "MenuZoom"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087), Vector3(-0.40020752, 111.23587, 109.293304)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.4666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"oyunu_baslat"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_5vw27"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MenuCamera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.40020752, 299.4002, 300.42087)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_come4"]
+_data = {
+&"MenuZoom": SubResource("Animation_272bh"),
+&"RESET": SubResource("Animation_5vw27")
+}
 
 [node name="main" type="Node3D" unique_id=847394524]
 script = ExtResource("1_seu75")
@@ -682,36 +736,43 @@ texture = ExtResource("15_074og")
 script = ExtResource("24_0odxb")
 
 [node name="Button1" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
+visible = false
 position = Vector2(643.00006, 900)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1432497986]
+visible = false
 position = Vector2(1076, 898)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=57475444]
+visible = false
 position = Vector2(1501.0001, 899)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=989638014]
+visible = false
 position = Vector2(1503.0001, 1006)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=2103304781]
+visible = false
 position = Vector2(1072.0001, 1004)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=345752423]
+visible = false
 position = Vector2(646, 1010)
 scale = Vector2(0.9902438, 1.0535719)
 texture = ExtResource("27_xuqvo")
 
 [node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=556379589]
+visible = false
 position = Vector2(188.43752, 526.5)
 scale = Vector2(0.80493635, 0.9479638)
 texture = ExtResource("6_272bh")
@@ -720,6 +781,42 @@ texture = ExtResource("6_272bh")
 position = Vector2(247, 107.00001)
 scale = Vector2(0.7707317, 0.8385214)
 texture = ExtResource("5_7mycd")
+
+[node name="Ahşap" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=804737487]
+offset_left = 81.74051
+offset_top = 81.095116
+offset_right = 121.74051
+offset_bottom = 104.095116
+
+[node name="Yemek" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=2127873952]
+offset_left = -207.59494
+offset_top = 78.70996
+offset_right = -167.59494
+offset_bottom = 101.70996
+
+[node name="Metal" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=675432952]
+offset_left = 76.55064
+offset_top = 16.696053
+offset_right = 116.55064
+offset_bottom = 39.696053
+
+[node name="Para" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=707680807]
+offset_left = -203.70255
+offset_top = 14.310905
+offset_right = -163.70255
+offset_bottom = 37.310905
+
+[node name="Moral" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1198426399]
+offset_left = -112.87975
+offset_top = -72.74711
+offset_right = -72.87975
+offset_bottom = -49.7471
+
+[node name="Nufus" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1782781086]
+offset_left = 253.00632
+offset_top = -73.93967
+offset_right = 293.00635
+offset_bottom = -50.939667
 
 [node name="MapSide" type="TextureRect" parent="OyunArayuzu/UI" unique_id=829830900]
 layout_mode = 0
@@ -755,8 +852,60 @@ mouse_filter = 0
 texture = ExtResource("29_kq58d")
 script = ExtResource("28_xuqvo")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
+[node name="MainMenu" type="Control" parent="OyunArayuzu" unique_id=1541291480]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("32_htxhm")]
+[node name="TextureRectLogo" type="TextureRect" parent="OyunArayuzu/MainMenu" unique_id=893166566]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 1772.0
+offset_bottom = 294.0
+mouse_filter = 2
+texture = ExtResource("32_0rl1p")
+
+[node name="TextureButtonStart" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1941982216]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 458.0
+offset_right = 739.0
+offset_bottom = 652.0
+texture_normal = ExtResource("33_ok6jj")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartSettings" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=88593014]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 660.0
+offset_right = 729.0
+offset_bottom = 854.0
+texture_normal = ExtResource("34_facbu")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartCredits" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1619312945]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 812.0
+offset_right = 729.0
+offset_bottom = 1006.0
+texture_normal = ExtResource("35_b1qrp")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MenuCamera" type="Camera3D" parent="OyunArayuzu/MainMenu" unique_id=425651067]
+transform = Transform3D(1, 0, 0, 0, 0.48679286, 0.87351745, 0, -0.87351745, 0.48679286, -0.40020752, 299.4002, 300.42087)
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OyunArayuzu/MainMenu" unique_id=168352840]
+libraries/ = SubResource("AnimationLibrary_come4")
+
+[connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
 
 [editable path="Map"]
