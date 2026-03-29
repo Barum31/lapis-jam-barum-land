@@ -10,7 +10,7 @@ func _ready():
 	# Main düğümünü bul ve sinyale bağlan
 	# Main düğümünü bul ve sinyale bağlan
 	var main_node = get_tree().root.get_node("main")
-	main_node.tick_changed.connect(_on_game_tick_updated)
+	
 
 func _derin_tarama(dugum):
 	if dugum is MeshInstance3D:
