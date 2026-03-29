@@ -45,7 +45,6 @@
 [ext_resource type="Texture2D" uid="uid://dvppe01duqhq4" path="res://map back.png" id="29_h8e4i"]
 [ext_resource type="Texture2D" uid="uid://kxc6t167ajwn" path="res://cıkıs button.png" id="29_kq58d"]
 [ext_resource type="Texture2D" uid="uid://brvno2e12bc0b" path="res://BARUMLAND TEXT.png" id="32_0rl1p"]
-[ext_resource type="PackedScene" uid="uid://dn3xldbdusgnp" path="res://Main_menu.tscn" id="32_htxhm"]
 [ext_resource type="Texture2D" uid="uid://bx278b2ge6b3h" path="res://prof dr asır kurt.png" id="32_jq2sk"]
 [ext_resource type="Texture2D" uid="uid://bx7v03su4p4w4" path="res://esmael.png" id="33_4k2k6"]
 [ext_resource type="Texture2D" uid="uid://m4ggqxmv2pc7" path="res://START BUTTON.png" id="33_ok6jj"]
@@ -64,6 +63,8 @@
 [ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
 [ext_resource type="Script" uid="uid://cdc2fttedfg5h" path="res://sol_menü.gd" id="43_sm6fg"]
 [ext_resource type="FontFile" uid="uid://c3f4dxc572oix" path="res://Montserrat-Regular.ttf" id="63_b17eg"]
+[ext_resource type="Texture2D" uid="uid://cg0svg7g4xylp" path="res://plays.jpg" id="64_ntx8l"]
+[ext_resource type="Texture2D" uid="uid://ctyssr8oeins5" path="res://degerli_esya.png" id="65_uatky"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -659,7 +660,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0056079626, 0.01427722, 0.
 script = ExtResource("3_h2yge")
 bina_ozel_ismi = "UÜSK Yemekhane Binası"
 bina_detay_bilgisi = "UÜSK Aşçıbaşı Gülizar Tayf:
-   Gülizar Tayf orta yaşlı, oldukça zayıf, her haliyle çelimsiz bir aşçıbaşıdır. Kedi kadar ürkek, manik depresif ve altındaki aşçıların onu zehirlemeye çalıştığını düşünecek kadar paranoyak bir yapıya sahip olan Gülizar Tayf’ın bu hale gelmesinin tek sebebi Kasım Lam’dır.  Kasım Lam, Gülizar Tayf’ın eşini ve çocuklarını yemekhaneden erzak çalmak ile suçlamış; daha sonrasında onları Gülizar Tayf’ın gözleri önünde demir bir sopa ile döverek acımasızca katletmiştir. Kasım Lam, bununla kalmamış ve Gülizar Tayf’ı ‘yeniden eğitim’ programına sokmuştur. Bu ‘eğitimin’ sonucunda Gülizar Tayf, bugün bildiğimiz korkak, paranoyak, manik depresif  ve son derece çelimsiz olan zayıf insana dönüşmüştür.
+   Gülizar Tayf orta yaşlı, her haliyle çelimsiz bir aşçıbaşıdır. manik depresif ve altındaki aşçıların onu zehirlemeye çalıştığını düşünecek kadar paranoyak bir yapıya sahip olan Gülizar Tayf’ın bu hale gelmesinin tek sebebi Kasım Lam’dır.  Kasım Lam, Gülizar Tayf’ın eşini ve çocuklarını yemekhaneden erzak çalmak ile suçlamış; daha sonrasında onları Gülizar Tayf’ın gözleri önünde bir sopa ile döverek acımasızca katletmiştir. Kasım Lam, bununla kalmamış ve Gülizar Tayf’ı ‘yeniden eğitim’ programına sokmuştur. Bu ‘eğitimin’ sonucunda Gülizar Tayf, bugün bildiğimiz korkak, paranoyak, manik depresif  ve son derece çelimsiz olan zayıf insana dönüşmüştür.
 "
 
 [node name="CollisionShape3D29" type="CollisionShape3D" parent="Map/sks/UÜSK Yemekhane Binası" unique_id=1573940797]
@@ -763,9 +764,9 @@ transform = Transform3D(3314.3794, 0.46707025, 9.646123e-08, 0, -0.0003792693, 3
 
 [node name="depolar" type="StaticBody3D" parent="Map" unique_id=958728404]
 script = ExtResource("9_cegan")
-bina_ozel_ismi = "UÜSK İşçi Blokları"
-bina_detay_bilgisi = "İşçi Blokları Yöneticisi Sakine As:
-Sakine As  gençliğinin baharında olan güzel, alımlı ve oldukça çekici bir kızdır. Ayrıca Sakine akıllı, sakin, anaç, işçilerin çıkarlarını kollayan ve kendini ‘Sosyalist’  olarak tanımlayan bir kızdır. Sakine bu ideolojiyi babasının yakın arkadaşı olan Doç.Dr.Regaip Kuru’dan öğrenmiş ve benimsemiştir. Bu ideolojisi onu işçiler arasında popüler hale getirmiş ve İşçi Blokları Yöneticiliğine kadar taşımıştır. Lakin bu görev sorumluluğun yanında tehlikelerinde beraberinde getirmiştir.
+bina_ozel_ismi = "UÜSK Materyal Deposu"
+bina_detay_bilgisi = "Depo Sorumlusu Muharrem Kek: 
+Muharrem Kek yaşlı, asık suratlı, koca burunlu eski bir UMMK askeridir. Muharrem UMMK’nin kaos ve terör ile mücadelesi sırasında bir bacağını kaybetmiş, bu durum onu ağır bir depresyona sürüklemiş ve alkole düşmesine yol açmıştır. Muharrem bu buhrandan kurtulmak için gönüllü olarak UÜSK kamplarına başvurmuştur. Muharrem Kek, Kasım Lam’ın çekindiği tek işçidir. 
 "
 
 [node name="depo" type="Node3D" parent="Map/depolar" unique_id=1215764168]
@@ -2388,6 +2389,7 @@ near = 0.01
 
 [node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
 unique_name_in_owner = true
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -2774,6 +2776,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_lock_ = true
 
 [node name="TextureRectLogo" type="TextureRect" parent="OyunArayuzu/MainMenu" unique_id=893166566]
 layout_mode = 0
@@ -2825,6 +2828,7 @@ libraries/ = SubResource("AnimationLibrary_come4")
 
 [node name="HubKatmani" type="CanvasLayer" parent="OyunArayuzu" unique_id=1351413791]
 layer = 5
+visible = false
 
 [node name="SolMenü" type="TextureRect" parent="OyunArayuzu/HubKatmani" unique_id=2043618943]
 z_index = 100
@@ -2849,9 +2853,9 @@ offset_bottom = 487.54932
 
 [node name="BinaIsmi" type="Label" parent="OyunArayuzu/HubKatmani/SolMenü/Panel" unique_id=2001768134]
 layout_mode = 0
-offset_left = 32.189407
+offset_left = 162.78642
 offset_top = 8.004017
-offset_right = 400.06836
+offset_right = 423.0608
 offset_bottom = 72.036224
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/outline_size = 2
@@ -2861,19 +2865,26 @@ label_settings = SubResource("LabelSettings_ntx8l")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_lock_ = true
 
 [node name="BinaBilgi" type="Label" parent="OyunArayuzu/HubKatmani/SolMenü/Panel" unique_id=1459787856]
 layout_mode = 0
-offset_left = 13.795441
-offset_top = 96.04831
-offset_right = 428.57898
-offset_bottom = 441.11075
+offset_left = 10.116672
+offset_top = 130.73242
+offset_right = 435.01688
+offset_bottom = 473.12677
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("63_b17eg")
 theme_override_font_sizes/font_size = 20
 label_settings = SubResource("LabelSettings_b17eg")
 autowrap_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="OyunArayuzu/HubKatmani/SolMenü/Panel" unique_id=548591521]
+position = Vector2(81.85307, 56.91748)
+scale = Vector2(0.7664143, 0.52084637)
+texture = ExtResource("64_ntx8l")
+metadata/_edit_lock_ = true
 
 [node name="KapatButonu" type="Button" parent="OyunArayuzu/HubKatmani/SolMenü" unique_id=1664659480]
 layout_mode = 0
@@ -2888,13 +2899,16 @@ theme_override_font_sizes/font_size = 30
 text = "X"
 flat = true
 
-[node name="CanvasLayer#MainMenu" parent="." unique_id=849037392 instance=ExtResource("32_htxhm")]
+[node name="Degerli" type="Control" parent="OyunArayuzu" unique_id=897340254]
 visible = false
-offset_left = -6.0
-offset_top = 23.0
-offset_right = 651.0
-offset_bottom = 335.0
-metadata/_edit_lock_ = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="OyunArayuzu/Degerli" unique_id=868755555]
+position = Vector2(954, 521)
+texture = ExtResource("65_uatky")
 
 [node name="etkileşimsiz alan" type="Node3D" parent="." unique_id=717214464]
 
@@ -3121,11 +3135,6 @@ mesh = SubResource("PlaneMesh_come4")
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
 material_override = SubResource("StandardMaterial3D_h8e4i")
 mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
-
-[node name="MainMenu" parent="CanvasLayer" unique_id=894189762 instance=ExtResource("32_htxhm")]
-visible = false
 
 [node name="etkileşimsiz alan2" type="Node3D" parent="." unique_id=2072421664]
 
