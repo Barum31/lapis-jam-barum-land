@@ -5,52 +5,17 @@
 [ext_resource type="Script" uid="uid://i0u0wgcvdtng" path="res://ankara_üniiiiii_3.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://bskfhmys03lgq" path="res://Main_menu.tscn" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://co7hptuvab5rr" path="res://üst menü.png" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://os0u6tk8p07e" path="res://sol menü.png" id="6_272bh"]
 [ext_resource type="Script" uid="uid://dcsvvnipcrula" path="res://sag_ust_menu.gd" id="8_074og"]
-[ext_resource type="Texture2D" uid="uid://glcf1eldo2tl" path="res://menu button.png" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://cdexq3alc208m" path="res://setting button.png" id="9_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://cblpb2na2laij" path="res://sound off.png" id="10_w48qg"]
-[ext_resource type="Script" uid="uid://c16ldxjhkrkok" path="res://history_book.gd" id="11_82xsv"]
-[ext_resource type="Texture2D" uid="uid://ojlxee4u6vpy" path="res://sound on.png" id="11_vivmo"]
-[ext_resource type="Texture2D" uid="uid://dw0llujla6f5o" path="res://history book.png" id="12_2cqfq"]
-[ext_resource type="Script" uid="uid://dukh1eu6dnpx6" path="res://setting_button.gd" id="12_cegan"]
-[ext_resource type="Texture2D" uid="uid://cc6o1jm3ih8s2" path="res://time menu.png" id="13_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://jyidyxmld1iw" path="res://time 1x.png" id="14_yaehf"]
-[ext_resource type="Texture2D" uid="uid://bdkhamaqbpj1c" path="res://time 2x.png" id="15_074og"]
-[ext_resource type="Texture2D" uid="uid://6232xk5aji2p" path="res://time 3x.png" id="16_cegan"]
-[ext_resource type="Script" uid="uid://c108nat03t4h2" path="res://time_menu.gd" id="20_d13ii"]
-[ext_resource type="Script" uid="uid://cmkmipsq16mpr" path="res://sound_off.gd" id="20_ryguw"]
-[ext_resource type="Script" uid="uid://dncvynvyybb24" path="res://sound_on.gd" id="21_getpj"]
-[ext_resource type="Script" uid="uid://d14t0xuy3pob2" path="res://time_1x.gd" id="22_1u8w0"]
-[ext_resource type="Script" uid="uid://dv3qto6bfwunn" path="res://time_2x.gd" id="24_0odxb"]
-[ext_resource type="Script" uid="uid://dkreg5tse605t" path="res://time_3x.gd" id="26_lswn8"]
-[ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
-[ext_resource type="Texture2D" uid="uid://sg1fyut2w2i5" path="res://button.png" id="27_xuqvo"]
-[ext_resource type="Texture2D" uid="uid://cyvossrxg8sxe" path="res://map.png" id="28_qsp4k"]
-[ext_resource type="Script" uid="uid://ctib752frnaab" path="res://geri_butonu.gd" id="28_xuqvo"]
-[ext_resource type="Texture2D" uid="uid://dvppe01duqhq4" path="res://map back.png" id="29_h8e4i"]
-[ext_resource type="Texture2D" uid="uid://kxc6t167ajwn" path="res://cıkıs button.png" id="29_kq58d"]
-[ext_resource type="PackedScene" path="res://Main_menu.tscn" id="32_htxhm"]
-[ext_resource type="Texture2D" uid="uid://bx278b2ge6b3h" path="res://prof dr asır kurt.png" id="32_jq2sk"]
-[ext_resource type="Texture2D" uid="uid://bx7v03su4p4w4" path="res://esmael.png" id="33_4k2k6"]
-[ext_resource type="Texture2D" uid="uid://b8088lq7awkus" path="res://yüce ulus.png" id="34_facbu"]
-[ext_resource type="Script" uid="uid://pam75hws7for" path="res://esmael_uretim.gd" id="35_4lmeg"]
-[ext_resource type="Texture2D" uid="uid://ds6gypodb6iyc" path="res://ulusal devrim.png" id="35_b1qrp"]
-[ext_resource type="Texture2D" uid="uid://b4ttc1dmhmwcx" path="res://ulusal yükseliş.png" id="36_come4"]
-[ext_resource type="Texture2D" uid="uid://cbq6upa55ahd0" path="res://arden toy.png" id="37_come4"]
-[ext_resource type="Texture2D" uid="uid://b3cmn4psyyhvk" path="res://ulusun huzuru.png" id="38_h8e4i"]
-[ext_resource type="FontFile" uid="uid://dol2bbxwl1qps" path="res://Montserrat-Black.ttf" id="41_d2t1y"]
-[ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
 [ext_resource type="Texture2D" uid="uid://dv1oeafmisrn" path="res://fabrika arka texture.png" id="8_dg77c"]
 [ext_resource type="Script" uid="uid://d2g80ooso78tw" path="res://hastane.gd" id="9_cegan"]
 [ext_resource type="Texture2D" uid="uid://bfvh33ndjh3wi" path="res://depo arka.png" id="9_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://luuph4gjxf8x" path="res://depo yan.png" id="10_w48qg"]
-[ext_resource type="Script" path="res://history_book.gd" id="11_82xsv"]
+[ext_resource type="Script" uid="uid://c16ldxjhkrkok" path="res://history_book.gd" id="11_82xsv"]
 [ext_resource type="Texture2D" uid="uid://ciigmwg131r76" path="res://catı.png" id="11_vivmo"]
 [ext_resource type="Texture2D" uid="uid://cynecaiji53bc" path="res://hastane ön.png" id="12_2cqfq"]
-[ext_resource type="Script" path="res://setting_button.gd" id="12_cegan"]
+[ext_resource type="Script" uid="uid://dukh1eu6dnpx6" path="res://setting_button.gd" id="12_cegan"]
 [ext_resource type="Texture2D" uid="uid://d3rutpib1v5e5" path="res://hastane 3.png" id="13_cegan"]
 [ext_resource type="Texture2D" uid="uid://cfv8pys5vs5e7" path="res://time menu.png" id="13_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://ck4ncfb4s1g6" path="res://hastane catı.png" id="14_82xsv"]
@@ -63,25 +28,36 @@
 [ext_resource type="Texture2D" uid="uid://djn05ivm5oda2" path="res://bina texture 3.png" id="18_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://bmef1c80o51he" path="res://menu button.png" id="18_qnost"]
 [ext_resource type="Texture2D" uid="uid://b4r35slt75xpo" path="res://bina texture.png" id="19_0odxb"]
-[ext_resource type="Script" path="res://time_menu.gd" id="20_d13ii"]
-[ext_resource type="Script" path="res://sound_off.gd" id="20_ryguw"]
+[ext_resource type="Script" uid="uid://c108nat03t4h2" path="res://time_menu.gd" id="20_d13ii"]
+[ext_resource type="Script" uid="uid://cmkmipsq16mpr" path="res://sound_off.gd" id="20_ryguw"]
 [ext_resource type="Texture2D" uid="uid://dvmddi66cxwuf" path="res://history book.png" id="20_wnkbs"]
-[ext_resource type="Script" path="res://sound_on.gd" id="21_getpj"]
-[ext_resource type="Script" path="res://time_1x.gd" id="22_1u8w0"]
+[ext_resource type="Script" uid="uid://dncvynvyybb24" path="res://sound_on.gd" id="21_getpj"]
+[ext_resource type="Script" uid="uid://d14t0xuy3pob2" path="res://time_1x.gd" id="22_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://blyvyidg5mw3l" path="res://setting button.png" id="22_f6a44"]
 [ext_resource type="Texture2D" uid="uid://dwrf74dlw8uav" path="res://sound off.png" id="24_0cbny"]
-[ext_resource type="Script" path="res://time_2x.gd" id="24_0odxb"]
+[ext_resource type="Script" uid="uid://dv3qto6bfwunn" path="res://time_2x.gd" id="24_0odxb"]
 [ext_resource type="Texture2D" uid="uid://c2pyilpgvoigj" path="res://sound on.png" id="26_hrvbo"]
-[ext_resource type="Script" path="res://time_3x.gd" id="26_lswn8"]
+[ext_resource type="Script" uid="uid://dkreg5tse605t" path="res://time_3x.gd" id="26_lswn8"]
 [ext_resource type="Script" uid="uid://dlxf1ljhu472x" path="res://map_side.gd" id="27_a6jrf"]
 [ext_resource type="Texture2D" uid="uid://b32o0ow10bjan" path="res://button.png" id="27_xuqvo"]
 [ext_resource type="Texture2D" uid="uid://2kb1v6o4burh" path="res://map.png" id="28_qsp4k"]
-[ext_resource type="Script" path="res://geri_butonu.gd" id="28_xuqvo"]
+[ext_resource type="Script" uid="uid://ctib752frnaab" path="res://geri_butonu.gd" id="28_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://dvppe01duqhq4" path="res://map back.png" id="29_h8e4i"]
 [ext_resource type="Texture2D" uid="uid://tx6p4vx4w88w" path="res://cıkıs button.png" id="29_kq58d"]
 [ext_resource type="Texture2D" uid="uid://m2jgu0a7tqmr" path="res://BARUMLAND TEXT.png" id="32_0rl1p"]
+[ext_resource type="PackedScene" uid="uid://dn3xldbdusgnp" path="res://Main_menu.tscn" id="32_htxhm"]
+[ext_resource type="Texture2D" uid="uid://bx278b2ge6b3h" path="res://prof dr asır kurt.png" id="32_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://bx7v03su4p4w4" path="res://esmael.png" id="33_4k2k6"]
 [ext_resource type="Texture2D" uid="uid://duogs4d0nukbe" path="res://START BUTTON.png" id="33_ok6jj"]
 [ext_resource type="Texture2D" uid="uid://cb413ckasomll" path="res://SETTİNGS BUTTON.png" id="34_facbu"]
+[ext_resource type="Script" path="res://esmael_uretim.gd" id="35_4lmeg"]
 [ext_resource type="Texture2D" uid="uid://ho8xbu88k88r" path="res://CREDİTS.png" id="35_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://b4ttc1dmhmwcx" path="res://ulusal yükseliş.png" id="36_come4"]
+[ext_resource type="Texture2D" uid="uid://cbq6upa55ahd0" path="res://arden toy.png" id="37_come4"]
+[ext_resource type="Texture2D" uid="uid://b3cmn4psyyhvk" path="res://ulusun huzuru.png" id="38_h8e4i"]
+[ext_resource type="FontFile" uid="uid://dol2bbxwl1qps" path="res://Montserrat-Black.ttf" id="41_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://6nd2p7wlasj6" path="res://map side.png" id="41_vke2r"]
+[ext_resource type="FontFile" uid="uid://debtkaaar44tc" path="res://Montserrat-SemiBold.ttf" id="42_gngh3"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bvp3"]
 points = PackedVector3Array(0.00322349, 0.015385933, -0.0005403394, -0.0035953019, -0.00370201, 0.001505699, -0.0035953019, -0.00370201, 0.002867522, -0.0022310095, 0.024936914, -0.0005403394, 0.00049557275, 0.023571687, 0.0055959737, 0.0018591976, -0.00370201, 0.0049129594, 0.0018591976, -0.00370201, -0.0005403394, -0.0029131558, 0.019481614, 0.0055959737, -0.0029131558, -0.0009743599, -0.0005403394, 0.00322349, 0.00039086677, 0.002867522, -0.0029131558, -0.00370201, 0.0049129594, 0.00322349, 0.015385933, 0.002867522, 0.00049557275, 0.024936914, -0.0005403394, -0.0029131558, 0.019481614, -0.0005403394, -0.0022310095, 0.024936914, 0.0035499353, 0.00322349, 0.001072078, -0.0005403394, -0.0015495309, 0.012658283, 0.0055959737, -0.0035953019, 0.0037997281, 0.001505699, 0.00049557275, 0.024936914, 0.0035499353, 0.0018591976, 0.010617452, 0.0049129594, 0.002541344, -0.00370201, 0.0021875117, -0.0022310095, -0.00370201, -0.0005403394, 0.00049557275, 0.015385933, 0.0055959737, -0.0035953019, 0.0037997281, 0.002867522, -0.0029131558, 0.014707525, 0.0055959737, -0.00086738466, 0.022887673, 0.0055959737, 0.002541344, -0.0030179955, -0.0005403394, 0.002541344, -0.00370201, 0.002867522, -0.0022310095, 0.012658283, 0.0055959737, -0.00018590596, 0.023571687, 0.0055959737)
@@ -385,6 +361,7 @@ albedo_texture = ExtResource("19_0odxb")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_getpj"]
 size = Vector3(184.38348, 31.989586, 57.203552)
+
 [sub_resource type="Animation" id="Animation_272bh"]
 resource_name = "MenuZoom"
 length = 1.5
@@ -2349,7 +2326,437 @@ near = 0.01
 
 [node name="OyunArayuzu" type="CanvasLayer" parent="." unique_id=990532156]
 
-[node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("6_7mycd")]
+[node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuButton" type="TextureRect" parent="OyunArayuzu/UI" unique_id=523656698]
+layout_mode = 0
+offset_left = 1832.0
+offset_top = 6.0
+offset_right = 1932.0
+offset_bottom = 80.0
+scale = Vector2(0.7000005, 0.7297297)
+texture = ExtResource("18_qnost")
+script = ExtResource("8_074og")
+
+[node name="MenuContainer" type="Control" parent="OyunArayuzu/UI/MenuButton" unique_id=614880985]
+anchors_preset = 0
+offset_left = -1531.4274
+offset_top = -13.703704
+offset_right = -1491.4274
+offset_bottom = 26.296295
+
+[node name="HistoryBook" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer" unique_id=1359194330]
+layout_mode = 0
+offset_left = 1514.2845
+offset_top = 193.22224
+offset_right = 1621.2845
+offset_bottom = 287.22226
+scale = Vector2(1.1248325, 1.0204887)
+texture = ExtResource("20_wnkbs")
+script = ExtResource("11_82xsv")
+
+[node name="SettingButton" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer" unique_id=557593443]
+layout_mode = 0
+offset_left = 1539.9988
+offset_top = 100.03704
+offset_right = 1623.9988
+offset_bottom = 184.03705
+scale = Vector2(0.9353734, 0.81569684)
+texture = ExtResource("22_f6a44")
+script = ExtResource("12_cegan")
+
+[node name="SoundOff" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=1068132161]
+layout_mode = 0
+offset_left = -103.85452
+offset_top = -11.760002
+offset_right = -30.854523
+offset_bottom = 82.24
+scale = Vector2(1.1794537, 1.2465957)
+mouse_filter = 0
+texture = ExtResource("24_0cbny")
+script = ExtResource("20_ryguw")
+
+[node name="SoundOn" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=500040024]
+layout_mode = 0
+offset_left = -87.05452
+offset_top = 13.439996
+offset_right = -14.05452
+offset_bottom = 72.439995
+scale = Vector2(1.1637589, 1.2066097)
+mouse_filter = 0
+texture = ExtResource("26_hrvbo")
+script = ExtResource("21_getpj")
+
+[node name="TimeMenu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1713432950]
+layout_mode = 0
+offset_left = 1420.0
+offset_top = 1.9999981
+offset_right = 1822.8195
+offset_bottom = 109.826096
+scale = Vector2(0.8130194, 0.8625)
+texture = ExtResource("13_ycdy4")
+script = ExtResource("20_d13ii")
+
+[node name="Time1x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=713909730]
+layout_mode = 0
+offset_left = 198.0273
+offset_top = 2.3188405
+offset_right = 249.0273
+offset_bottom = 31.31884
+scale = Vector2(0.931531, 0.78460777)
+texture = ExtResource("14_yaehf")
+script = ExtResource("22_1u8w0")
+
+[node name="Time2x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=2012084285]
+layout_mode = 0
+offset_left = 249.68658
+offset_top = 2.3188422
+offset_right = 300.68658
+offset_bottom = 32.318844
+scale = Vector2(0.8983686, 0.81159395)
+texture = ExtResource("16_cegan")
+script = ExtResource("26_lswn8")
+
+[node name="Time3x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=1855082899]
+layout_mode = 0
+offset_left = 301.34583
+offset_top = 2.318842
+offset_right = 352.34583
+offset_bottom = 32.31884
+scale = Vector2(0.8591792, 0.8309179)
+texture = ExtResource("15_074og")
+script = ExtResource("24_0odxb")
+
+[node name="Button1" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
+visible = false
+position = Vector2(643.00006, 900)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1432497986]
+visible = false
+position = Vector2(1076, 898)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=57475444]
+visible = false
+position = Vector2(1501.0001, 899)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=989638014]
+visible = false
+position = Vector2(1503.0001, 1006)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=2103304781]
+visible = false
+position = Vector2(1072.0001, 1004)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=345752423]
+visible = false
+position = Vector2(646, 1010)
+scale = Vector2(0.9902438, 1.0535719)
+texture = ExtResource("27_xuqvo")
+
+[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=556379589]
+visible = false
+position = Vector2(188.43752, 526.5)
+scale = Vector2(0.80493635, 0.9479638)
+texture = ExtResource("6_272bh")
+
+[node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1686905052]
+position = Vector2(247, 107.00001)
+scale = Vector2(0.7707317, 0.8385214)
+texture = ExtResource("5_7mycd")
+
+[node name="Ahşap" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=804737487]
+offset_left = 81.74051
+offset_top = 81.095116
+offset_right = 121.74051
+offset_bottom = 104.095116
+
+[node name="Yemek" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=2127873952]
+offset_left = -207.59494
+offset_top = 78.70996
+offset_right = -167.59494
+offset_bottom = 101.70996
+
+[node name="Metal" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=675432952]
+offset_left = 76.55064
+offset_top = 16.696053
+offset_right = 116.55064
+offset_bottom = 39.696053
+
+[node name="Para" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=707680807]
+offset_left = -203.70255
+offset_top = 14.310905
+offset_right = -163.70255
+offset_bottom = 37.310905
+
+[node name="Moral" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1198426399]
+offset_left = -112.87975
+offset_top = -72.74711
+offset_right = -72.87975
+offset_bottom = -49.7471
+
+[node name="Nufus" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1782781086]
+offset_left = 253.00632
+offset_top = -73.93967
+offset_right = 293.00635
+offset_bottom = -50.939667
+
+[node name="MapSide" type="TextureRect" parent="OyunArayuzu/UI" unique_id=829830900]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 962.0
+offset_right = 623.99994
+offset_bottom = 1378.7383
+scale = Vector2(0.5658537, 0.5687022)
+mouse_filter = 0
+texture = ExtResource("41_vke2r")
+script = ExtResource("27_a6jrf")
+
+[node name="HaritaEkrani" type="TextureRect" parent="OyunArayuzu" unique_id=1674314826]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = -0.006250008
+anchor_top = -0.026851859
+anchor_right = 0.9318381
+anchor_bottom = 0.9656309
+offset_left = -189.99998
+offset_top = 3.0000057
+offset_right = 939.0564
+offset_bottom = 559.3944
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.95481473, 0.91182786)
+mouse_filter = 2
+texture = ExtResource("29_h8e4i")
+metadata/_edit_use_anchors_ = true
+
+[node name="harita" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=459794350]
+layout_mode = 0
+offset_left = 623.1576
+offset_top = 118.443405
+offset_right = 2623.546
+offset_bottom = 1307.2642
+scale = Vector2(0.78675336, 0.83651)
+mouse_filter = 2
+texture = ExtResource("28_qsp4k")
+
+[node name="GeriButonu" type="TextureRect" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=524464334]
+layout_mode = 0
+offset_left = 58.572575
+offset_top = 28.842882
+offset_right = 194.25554
+offset_bottom = 157.72453
+scale = Vector2(0.8844146, 0.85349613)
+mouse_filter = 0
+texture = ExtResource("29_kq58d")
+script = ExtResource("28_xuqvo")
+
+[node name="Prof_asir_uretim_kamp" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=40188222]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 248.93375
+offset_top = 264.83008
+offset_right = 648.9337
+offset_bottom = 759.8301
+texture_normal = ExtResource("32_jq2sk")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Prof. Dr. Asır Kurt Üretim Kampı: "
+bolge_detayi = "Metal ham maddeleri ve mekanik saat üretiminde uzmanlaşılmıştır. Üçüncü en büyük üretim kampıdır.
+Müfettiş: Asım Berk
+"
+
+[node name="Esmael_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=2015948887]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 326.90546
+offset_top = 837.99115
+offset_right = 783.90546
+offset_bottom = 1136.9912
+texture_normal = ExtResource("33_4k2k6")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Esmael Çelik Üretim Kampı:"
+bolge_detayi = "Tarım ve hayvancılık üzerine uzmanlaşılmıştır. En küçük üretim kampıdır.
+Müfettiş: Ahmet Bozdağ
+"
+
+[node name="yuce_ulus_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=428799507]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 504.5235
+offset_top = 55.063686
+offset_right = 809.52356
+offset_bottom = 647.06366
+texture_normal = ExtResource("34_facbu")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Yüce Ulus Üretim Kampı:"
+bolge_detayi = "Lojistik ve taşımacılık üzerine uzmanlaşılmıştır. Kaçakçılar ve tüccarlar buradan çıkar. UMMK subaylarını en sevdiği üretim kampıdır.
+Müfettiş: Talim Nedim
+"
+
+[node name="ulusal_devrim_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1344667196]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 664.382
+offset_top = 541.68414
+offset_right = 1321.3821
+offset_bottom = 1085.6841
+texture_normal = ExtResource("35_b1qrp")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusal Devrim Üretim Kampı"
+bolge_detayi = "Kampımız!!!"
+
+[node name="ulusal_yukselis_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1186963285]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 816.0
+offset_top = 174.0
+offset_right = 1763.0
+offset_bottom = 702.0
+texture_normal = ExtResource("36_come4")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusal Yükseliş Üretim Kampı: "
+bolge_detayi = "Kereste ham maddeleri ve üst düzey tekstil üretiminde uzmanlaşılmıştır. En büyük üretim kampıdır. 
+Müfettiş: Mustafa Kam
+"
+
+[node name="arden_toy_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1953815616]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 726.8334
+offset_top = 53.752655
+offset_right = 1342.8334
+offset_bottom = 442.75266
+texture_normal = ExtResource("37_come4")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK General Arden Toy Üretim Kampı:"
+bolge_detayi = "Enerji malzemeleri ve enerji üretiminde uzmanlaşılmıştır. En yeni kurulan kamptır.
+Müfettiş: Ayberk Petek
+"
+
+[node name="ulusal_huzur uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=407881024]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1386.9999
+offset_top = 508.00003
+offset_right = 1730.9999
+offset_bottom = 758.0
+texture_normal = ExtResource("38_h8e4i")
+script = ExtResource("35_4lmeg")
+bolge_ismi = "UÜSK Ulusun Huzuru Üretim Kampı:"
+bolge_detayi = "UÜSK Ulusun Huzuru Üretim Kampı:
+UMMK tarafından Terör ve Kaos Listesi’ne alınmış ve yok edilmiştir. Yaşanılamaz haldedir, sadece ismi kaydı devam eder.
+Müfettiş: NA
+"
+
+[node name="BilgiPaneli" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=1470727165]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.012
+anchor_bottom = 0.012
+offset_left = 224.12726
+offset_top = 101.0975
+offset_right = 608.495
+offset_bottom = 1117.7368
+
+[node name="BolgeIsmi" type="Label" parent="OyunArayuzu/HaritaEkrani/BilgiPaneli" unique_id=9180265]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -7.3312645
+offset_top = 4.3867855
+offset_right = 385.41507
+offset_bottom = 148.05424
+theme_override_fonts/font = ExtResource("41_d2t1y")
+theme_override_font_sizes/font_size = 40
+autowrap_mode = 2
+
+[node name="BolgeDetayi" type="Label" parent="OyunArayuzu/HaritaEkrani/BilgiPaneli" unique_id=283944628]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -9.425911
+offset_top = 266.49765
+offset_right = 388.55707
+offset_bottom = 949.7407
+theme_override_fonts/font = ExtResource("42_gngh3")
+theme_override_font_sizes/font_size = 25
+autowrap_mode = 2
+
+[node name="MainMenu" type="Control" parent="OyunArayuzu" unique_id=1541291480]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRectLogo" type="TextureRect" parent="OyunArayuzu/MainMenu" unique_id=893166566]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 1772.0
+offset_bottom = 294.0
+mouse_filter = 2
+texture = ExtResource("32_0rl1p")
+
+[node name="TextureButtonStart" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1941982216]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 458.0
+offset_right = 739.0
+offset_bottom = 652.0
+texture_normal = ExtResource("33_ok6jj")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartSettings" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=88593014]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 660.0
+offset_right = 729.0
+offset_bottom = 854.0
+texture_normal = ExtResource("34_facbu")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TextureButtonStartCredits" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1619312945]
+custom_minimum_size = Vector2(627, 194)
+layout_mode = 0
+offset_left = 102.0
+offset_top = 812.0
+offset_right = 729.0
+offset_bottom = 1006.0
+texture_normal = ExtResource("35_b1qrp")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MenuCamera" type="Camera3D" parent="OyunArayuzu/MainMenu" unique_id=425651067]
+transform = Transform3D(1, 0, 0, 0, 0.48679286, 0.87351745, 0, -0.87351745, 0.48679286, -0.40020752, 299.4002, 300.42087)
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OyunArayuzu/MainMenu" unique_id=168352840]
+libraries/ = SubResource("AnimationLibrary_come4")
+
+[node name="CanvasLayer#MainMenu" parent="." unique_id=849037392 instance=ExtResource("32_htxhm")]
+offset_left = -6.0
+offset_top = 23.0
+offset_right = 651.0
+offset_bottom = 335.0
+metadata/_edit_lock_ = true
 
 [node name="etkileşimsiz alan" type="Node3D" parent="." unique_id=717214464]
 
@@ -2576,433 +2983,13 @@ mesh = SubResource("PlaneMesh_come4")
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
 material_override = SubResource("StandardMaterial3D_h8e4i")
 mesh = SubResource("QuadMesh_ok6jj")
-[node name="UI" type="Control" parent="OyunArayuzu" unique_id=407202115]
-unique_name_in_owner = true
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="MenuButton" type="TextureRect" parent="OyunArayuzu/UI" unique_id=523656698]
-layout_mode = 0
-offset_left = 1832.0
-offset_top = 6.0
-offset_right = 1932.0
-offset_bottom = 80.0
-scale = Vector2(0.7000005, 0.7297297)
-texture = ExtResource("18_qnost")
-script = ExtResource("8_074og")
-
-[node name="MenuContainer" type="Control" parent="OyunArayuzu/UI/MenuButton" unique_id=614880985]
-anchors_preset = 0
-offset_left = -1531.4274
-offset_top = -13.703704
-offset_right = -1491.4274
-offset_bottom = 26.296295
-
-[node name="HistoryBook" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer" unique_id=1359194330]
-layout_mode = 0
-offset_left = 1514.2845
-offset_top = 193.22224
-offset_right = 1621.2845
-offset_bottom = 287.22226
-scale = Vector2(1.1248325, 1.0204887)
-texture = ExtResource("20_wnkbs")
-script = ExtResource("11_82xsv")
-
-[node name="SettingButton" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer" unique_id=557593443]
-layout_mode = 0
-offset_left = 1539.9988
-offset_top = 100.03704
-offset_right = 1623.9988
-offset_bottom = 184.03705
-scale = Vector2(0.9353734, 0.81569684)
-texture = ExtResource("22_f6a44")
-script = ExtResource("12_cegan")
-
-[node name="SoundOff" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=1068132161]
-layout_mode = 0
-offset_left = -103.85452
-offset_top = -11.760002
-offset_right = -30.854523
-offset_bottom = 82.24
-scale = Vector2(1.1794537, 1.2465957)
-mouse_filter = 0
-texture = ExtResource("24_0cbny")
-script = ExtResource("20_ryguw")
-
-[node name="SoundOn" type="TextureRect" parent="OyunArayuzu/UI/MenuButton/MenuContainer/SettingButton" unique_id=500040024]
-layout_mode = 0
-offset_left = -87.05452
-offset_top = 13.439996
-offset_right = -14.05452
-offset_bottom = 72.439995
-scale = Vector2(1.1637589, 1.2066097)
-mouse_filter = 0
-texture = ExtResource("26_hrvbo")
-script = ExtResource("21_getpj")
-
-[node name="TimeMenu" type="TextureRect" parent="OyunArayuzu/UI" unique_id=1713432950]
-layout_mode = 0
-offset_left = 1420.0
-offset_top = 1.9999981
-offset_right = 1822.8195
-offset_bottom = 109.826096
-scale = Vector2(0.8130194, 0.8625)
-texture = ExtResource("13_ycdy4")
-script = ExtResource("20_d13ii")
-
-[node name="Time1x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=713909730]
-layout_mode = 0
-offset_left = 198.0273
-offset_top = 2.3188405
-offset_right = 249.0273
-offset_bottom = 31.31884
-scale = Vector2(0.931531, 0.78460777)
-texture = ExtResource("14_yaehf")
-script = ExtResource("22_1u8w0")
-
-[node name="Time2x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=2012084285]
-layout_mode = 0
-offset_left = 249.68658
-offset_top = 2.3188422
-offset_right = 300.68658
-offset_bottom = 32.318844
-scale = Vector2(0.8983686, 0.81159395)
-texture = ExtResource("16_cegan")
-script = ExtResource("26_lswn8")
-
-[node name="Time3x" type="TextureRect" parent="OyunArayuzu/UI/TimeMenu" unique_id=1855082899]
-layout_mode = 0
-offset_left = 301.34583
-offset_top = 2.318842
-offset_right = 352.34583
-offset_bottom = 32.31884
-scale = Vector2(0.8591792, 0.8309179)
-texture = ExtResource("15_074og")
-script = ExtResource("24_0odxb")
-
-[node name="Button1" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1369130439]
-visible = false
-position = Vector2(643.00006, 900)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button2" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1432497986]
-visible = false
-position = Vector2(1076, 898)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button3" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=57475444]
-visible = false
-position = Vector2(1501.0001, 899)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button4" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=989638014]
-visible = false
-position = Vector2(1503.0001, 1006)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button5" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=2103304781]
-visible = false
-position = Vector2(1072.0001, 1004)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="Button6" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=345752423]
-visible = false
-position = Vector2(646, 1010)
-scale = Vector2(0.9902438, 1.0535719)
-texture = ExtResource("27_xuqvo")
-
-[node name="SolMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=556379589]
-visible = false
-position = Vector2(188.43752, 526.5)
-scale = Vector2(0.80493635, 0.9479638)
-texture = ExtResource("6_272bh")
-
-[node name="ÜstMenü" type="Sprite2D" parent="OyunArayuzu/UI" unique_id=1686905052]
-position = Vector2(247, 107.00001)
-scale = Vector2(0.7707317, 0.8385214)
-texture = ExtResource("5_7mycd")
-
-[node name="Ahşap" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=804737487]
-offset_left = 81.74051
-offset_top = 81.095116
-offset_right = 121.74051
-offset_bottom = 104.095116
-
-[node name="Yemek" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=2127873952]
-offset_left = -207.59494
-offset_top = 78.70996
-offset_right = -167.59494
-offset_bottom = 101.70996
-
-[node name="Metal" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=675432952]
-offset_left = 76.55064
-offset_top = 16.696053
-offset_right = 116.55064
-offset_bottom = 39.696053
-
-[node name="Para" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=707680807]
-offset_left = -203.70255
-offset_top = 14.310905
-offset_right = -163.70255
-offset_bottom = 37.310905
-
-[node name="Moral" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1198426399]
-offset_left = -112.87975
-offset_top = -72.74711
-offset_right = -72.87975
-offset_bottom = -49.7471
-
-[node name="Nufus" type="Label" parent="OyunArayuzu/UI/ÜstMenü" unique_id=1782781086]
-offset_left = 253.00632
-offset_top = -73.93967
-offset_right = 293.00635
-offset_bottom = -50.939667
-
-[node name="MapSide" type="TextureRect" parent="OyunArayuzu/UI" unique_id=829830900]
-layout_mode = 0
-offset_left = -0.9999995
-offset_top = 846.99994
-offset_right = 613.99994
-offset_bottom = 1263.7383
-scale = Vector2(0.5658537, 0.5687022)
-mouse_filter = 0
-script = ExtResource("27_a6jrf")
-
-[node name="HaritaEkrani" type="TextureRect" parent="OyunArayuzu" unique_id=1674314826]
-unique_name_in_owner = true
-anchors_preset = -1
-anchor_left = -0.006250008
-anchor_top = -0.026851859
-anchor_right = 0.9318381
-anchor_bottom = 0.9656309
-offset_left = -189.99998
-offset_top = 3.0000057
-offset_right = 939.0564
-offset_bottom = 559.3944
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.95481473, 0.91182786)
-mouse_filter = 2
-texture = ExtResource("29_h8e4i")
-metadata/_edit_use_anchors_ = true
-
-[node name="harita" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=459794350]
-layout_mode = 0
-offset_left = 623.1576
-offset_top = 118.443405
-offset_right = 2623.546
-offset_bottom = 1307.2642
-scale = Vector2(0.78675336, 0.83651)
-mouse_filter = 2
-texture = ExtResource("28_qsp4k")
-
-[node name="GeriButonu" type="TextureRect" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=524464334]
-layout_mode = 0
-offset_left = 58.572575
-offset_top = 28.842882
-offset_right = 194.25554
-offset_bottom = 157.72453
-scale = Vector2(0.8844146, 0.85349613)
-mouse_filter = 0
-texture = ExtResource("29_kq58d")
-script = ExtResource("28_xuqvo")
-
-[node name="Prof_asir_uretim_kamp" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=40188222]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 248.93375
-offset_top = 264.83008
-offset_right = 648.9337
-offset_bottom = 759.8301
-texture_normal = ExtResource("32_jq2sk")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Prof. Dr. Asır Kurt Üretim Kampı: "
-bolge_detayi = "Metal ham maddeleri ve mekanik saat üretiminde uzmanlaşılmıştır. Üçüncü en büyük üretim kampıdır.
-Müfettiş: Asım Berk
-"
-
-[node name="Esmael_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=2015948887]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 326.90546
-offset_top = 837.99115
-offset_right = 783.90546
-offset_bottom = 1136.9912
-texture_normal = ExtResource("33_4k2k6")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Esmael Çelik Üretim Kampı:"
-bolge_detayi = "Tarım ve hayvancılık üzerine uzmanlaşılmıştır. En küçük üretim kampıdır.
-Müfettiş: Ahmet Bozdağ
-"
-
-[node name="yuce_ulus_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=428799507]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 504.5235
-offset_top = 55.063686
-offset_right = 809.52356
-offset_bottom = 647.06366
-texture_normal = ExtResource("34_facbu")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Yüce Ulus Üretim Kampı:"
-bolge_detayi = "Lojistik ve taşımacılık üzerine uzmanlaşılmıştır. Kaçakçılar ve tüccarlar buradan çıkar. UMMK subaylarını en sevdiği üretim kampıdır.
-Müfettiş: Talim Nedim
-"
-
-[node name="ulusal_devrim_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1344667196]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 664.382
-offset_top = 541.68414
-offset_right = 1321.3821
-offset_bottom = 1085.6841
-texture_normal = ExtResource("35_b1qrp")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Ulusal Devrim Üretim Kampı"
-bolge_detayi = "Kampımız!!!"
-
-[node name="ulusal_yukselis_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1186963285]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 816.0
-offset_top = 174.0
-offset_right = 1763.0
-offset_bottom = 702.0
-texture_normal = ExtResource("36_come4")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Ulusal Yükseliş Üretim Kampı: "
-bolge_detayi = "Kereste ham maddeleri ve üst düzey tekstil üretiminde uzmanlaşılmıştır. En büyük üretim kampıdır. 
-Müfettiş: Mustafa Kam
-"
-
-[node name="arden_toy_uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=1953815616]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 726.8334
-offset_top = 53.752655
-offset_right = 1342.8334
-offset_bottom = 442.75266
-texture_normal = ExtResource("37_come4")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK General Arden Toy Üretim Kampı:"
-bolge_detayi = "Enerji malzemeleri ve enerji üretiminde uzmanlaşılmıştır. En yeni kurulan kamptır.
-Müfettiş: Ayberk Petek
-"
-
-[node name="ulusal_huzur uretim" type="TextureButton" parent="OyunArayuzu/HaritaEkrani/harita" unique_id=407881024]
-show_behind_parent = true
-layout_mode = 0
-offset_left = 1386.9999
-offset_top = 508.00003
-offset_right = 1730.9999
-offset_bottom = 758.0
-texture_normal = ExtResource("38_h8e4i")
-script = ExtResource("35_4lmeg")
-bolge_ismi = "UÜSK Ulusun Huzuru Üretim Kampı:"
-bolge_detayi = "UÜSK Ulusun Huzuru Üretim Kampı:
-UMMK tarafından Terör ve Kaos Listesi’ne alınmış ve yok edilmiştir. Yaşanılamaz haldedir, sadece ismi kaydı devam eder.
-Müfettiş: NA
-"
-
-[node name="BilgiPaneli" type="TextureRect" parent="OyunArayuzu/HaritaEkrani" unique_id=1470727165]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.012
-anchor_bottom = 0.012
-offset_left = 224.12726
-offset_top = 101.0975
-offset_right = 608.495
-offset_bottom = 1117.7368
-
-[node name="BolgeIsmi" type="Label" parent="OyunArayuzu/HaritaEkrani/BilgiPaneli" unique_id=9180265]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = -7.3312645
-offset_top = 4.3867855
-offset_right = 385.41507
-offset_bottom = 148.05424
-theme_override_fonts/font = ExtResource("41_d2t1y")
-theme_override_font_sizes/font_size = 40
-autowrap_mode = 2
-
-[node name="BolgeDetayi" type="Label" parent="OyunArayuzu/HaritaEkrani/BilgiPaneli" unique_id=283944628]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = -9.425911
-offset_top = 266.49765
-offset_right = 388.55707
-offset_bottom = 949.7407
-theme_override_fonts/font = ExtResource("42_gngh3")
-theme_override_font_sizes/font_size = 25
-autowrap_mode = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2037050766]
 visible = false
 
-[node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("32_htxhm")]
-[node name="MainMenu" type="Control" parent="OyunArayuzu" unique_id=1541291480]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="MainMenu" parent="CanvasLayer" unique_id=894189762 instance=ExtResource("32_htxhm")]
 
-[node name="TextureRectLogo" type="TextureRect" parent="OyunArayuzu/MainMenu" unique_id=893166566]
-layout_mode = 0
-offset_left = 168.0
-offset_right = 1772.0
-offset_bottom = 294.0
-mouse_filter = 2
-texture = ExtResource("32_0rl1p")
-
-[node name="TextureButtonStart" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1941982216]
-custom_minimum_size = Vector2(627, 194)
-layout_mode = 0
-offset_left = 112.0
-offset_top = 458.0
-offset_right = 739.0
-offset_bottom = 652.0
-texture_normal = ExtResource("33_ok6jj")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="TextureButtonStartSettings" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=88593014]
-custom_minimum_size = Vector2(627, 194)
-layout_mode = 0
-offset_left = 102.0
-offset_top = 660.0
-offset_right = 729.0
-offset_bottom = 854.0
-texture_normal = ExtResource("34_facbu")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="TextureButtonStartCredits" type="TextureButton" parent="OyunArayuzu/MainMenu" unique_id=1619312945]
-custom_minimum_size = Vector2(627, 194)
-layout_mode = 0
-offset_left = 102.0
-offset_top = 812.0
-offset_right = 729.0
-offset_bottom = 1006.0
-texture_normal = ExtResource("35_b1qrp")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="MenuCamera" type="Camera3D" parent="OyunArayuzu/MainMenu" unique_id=425651067]
-transform = Transform3D(1, 0, 0, 0, 0.48679286, 0.87351745, 0, -0.87351745, 0.48679286, -0.40020752, 299.4002, 300.42087)
-current = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="OyunArayuzu/MainMenu" unique_id=168352840]
-libraries/ = SubResource("AnimationLibrary_come4")
-
-[node name="etkileşimsiz alan" type="Node3D" parent="." unique_id=717214464]
+[node name="etkileşimsiz alan2" type="Node3D" parent="." unique_id=2072421664]
 
 [connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
 
