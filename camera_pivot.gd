@@ -1,6 +1,5 @@
 extends Node3D
 
-@onready var animation_player = $"../CanvasLayer/MainMenu/AnimationPlayer"
 @export_group("Hareket Ayarları")
 @export var move_speed: float = 120.0
 @export var rotation_speed: float = 1
