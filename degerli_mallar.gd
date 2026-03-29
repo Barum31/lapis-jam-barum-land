@@ -1,9 +1,10 @@
-extends TextureRect # Button yerine TextureRect yaptık
+extends Control 
 
 func _gui_input(event):
-	# TextureRect'te tıklamayı algılamak için bu fonksiyon kullanılır
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		_on_pressed()
 
 func _on_pressed():
-	print("DEĞERLİ MALLAR PANELİ AÇILIYOR...")
+	print("Sinyal Gönderiliyor...")
+	# Gruba dahil olan her şeye bu fonksiyonu çalıştır diyoruz
+	get_tree().call_group("degerli_panel", "panel_ac_kapat")
