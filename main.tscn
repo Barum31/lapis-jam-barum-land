@@ -6,8 +6,8 @@
 [ext_resource type="Script" uid="uid://h6g34xdrqsvo" path="res://static_body_3d.gd" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://d2bhhhyahb4sf" path="res://camera_pivot.gd" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bskfhmys03lgq" path="res://Main_menu.tscn" id="6_7mycd"]
-[ext_resource type="Script" uid="uid://cbu647ei5w4vn" path="res://main_menu.gd" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://dv1oeafmisrn" path="res://fabrika arka texture.png" id="8_dg77c"]
+[ext_resource type="Script" uid="uid://d2g80ooso78tw" path="res://hastane.gd" id="9_cegan"]
 [ext_resource type="Texture2D" uid="uid://bfvh33ndjh3wi" path="res://depo arka.png" id="9_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://luuph4gjxf8x" path="res://depo yan.png" id="10_w48qg"]
 [ext_resource type="Texture2D" uid="uid://djk5umg8oxvia" path="res://catı.png" id="11_vivmo"]
@@ -260,20 +260,26 @@ albedo_texture = ExtResource("11_vivmo")
 [sub_resource type="PlaneMesh" id="PlaneMesh_ryguw"]
 size = Vector2(12, 12)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_82xsv"]
+size = Vector3(26.835567, 6.0272217, 27.534485)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_074og"]
+size = Vector3(28.175133, 33.086803, 29.023705)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d13ii"]
 albedo_texture = ExtResource("12_2cqfq")
 
 [sub_resource type="QuadMesh" id="QuadMesh_1u8w0"]
 size = Vector2(20, 24)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lswn8"]
-albedo_texture = ExtResource("13_cegan")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a6jrf"]
 albedo_texture = ExtResource("14_82xsv")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_xuqvo"]
 size = Vector2(20.1, 20.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lswn8"]
+albedo_texture = ExtResource("13_cegan")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsp4k"]
 albedo_texture = ExtResource("15_getpj")
@@ -296,6 +302,9 @@ albedo_texture = ExtResource("16_ryguw")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0rl1p"]
 albedo_texture = ExtResource("17_d13ii")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cegan"]
+size = Vector3(10.591499, 9.830933, 10.5896)
+
 [sub_resource type="QuadMesh" id="QuadMesh_ok6jj"]
 size = Vector2(8, 20)
 
@@ -310,6 +319,9 @@ size = Vector2(8, 8)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8e4i"]
 albedo_texture = ExtResource("19_0odxb")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_getpj"]
+size = Vector3(184.38348, 31.989586, 57.203552)
 
 [node name="main" type="Node3D" unique_id=847394524]
 script = ExtResource("1_lquwl")
@@ -618,7 +630,8 @@ shape = SubResource("ConvexPolygonShape3D_rm4vd")
 [node name="zemin" parent="Map" index="9" unique_id=2008264063]
 transform = Transform3D(3314.3794, 0.46707025, 9.646123e-08, 0, -0.0003792693, 3314.3823, 0.48657167, -3181.5413, -0.0003951052, 0.022979736, -0.03209114, -0.023124695)
 
-[node name="depolar" type="Node3D" parent="Map" unique_id=787899260]
+[node name="depolar" type="StaticBody3D" parent="Map" unique_id=958728404]
+script = ExtResource("9_cegan")
 
 [node name="depo" type="Node3D" parent="Map/depolar" unique_id=1215764168]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.797, 20.7, 404.109)
@@ -732,36 +745,46 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.6
 material_override = SubResource("StandardMaterial3D_getpj")
 mesh = SubResource("PlaneMesh_ryguw")
 
-[node name="hastane" type="Node3D" parent="Map" unique_id=672434807]
-transform = Transform3D(-0.94832367, 0, 0.31730458, 0, 1, 0, -0.31730458, 0, -0.94832367, -7.6183777, 2.6044235, 265.86475)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/depolar" unique_id=7833485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.688896, 23.361399, 273.08295)
+shape = SubResource("BoxShape3D_82xsv")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/hastane" unique_id=1631733951]
-transform = Transform3D(0.9711343, 0, 0.23853347, 0, 1, 0, -0.23853347, 0, 0.9711343, 7.964, 14, 158.528)
-material_override = SubResource("StandardMaterial3D_d13ii")
-mesh = SubResource("QuadMesh_1u8w0")
+[node name="hastane" type="StaticBody3D" parent="Map" unique_id=1660611982]
+transform = Transform3D(-0.94832367, 0, 0.31730458, 0, 1, 0, -0.31730458, 0, -0.94832367, -7.6183777, 2.6044235, 265.86475)
+script = ExtResource("9_cegan")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/hastane" unique_id=81266686]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 4.641426, 11.088492, 148.56322)
+shape = SubResource("BoxShape3D_074og")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/hastane" unique_id=958841207]
-transform = Transform3D(-0.97113425, 0, -0.23853356, 0, 1, 0, 0.23853356, 0, -0.97113425, 3.2477574, 14, 139.14249)
+transform = Transform3D(-0.9711342, 0, -0.23853356, 0, 1, 0, 0.23853356, 0, -0.9711342, 3.2477646, 14, 139.14249)
 material_override = SubResource("StandardMaterial3D_d13ii")
-mesh = SubResource("QuadMesh_1u8w0")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/hastane" unique_id=1357150387]
-transform = Transform3D(-0.2385334, 0, 0.9711343, 0, 1, 0, -0.9711343, 0, -0.2385334, 15.329, 14, 146.466)
-material_override = SubResource("StandardMaterial3D_lswn8")
 mesh = SubResource("QuadMesh_1u8w0")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/hastane" unique_id=2082693809]
-transform = Transform3D(0.23683804, 0, -0.97154915, 0, 1, 0, 0.97154915, 0, 0.23683804, -4.1, 14, 151.19)
+transform = Transform3D(0.23683804, 0, -0.97154915, 0, 1, 0, 0.97154915, 0, 0.23683804, -4.100006, 14, 151.18999)
 material_override = SubResource("StandardMaterial3D_d13ii")
 mesh = SubResource("QuadMesh_1u8w0")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Map/hastane" unique_id=1040193170]
-transform = Transform3D(0.9715491, 0, 0.23683815, 0, 1, 0, -0.23683815, 0, 0.9715491, 5.597323, 26.0382, 148.83841)
+transform = Transform3D(0.9715491, 0, 0.23683816, 0, 1, 0, -0.23683816, 0, 0.9715491, 5.597328, 26.0382, 148.8384)
 material_override = SubResource("StandardMaterial3D_a6jrf")
 mesh = SubResource("PlaneMesh_xuqvo")
 
-[node name="maliye" type="Node3D" parent="Map" unique_id=115270652]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/hastane" unique_id=1357150387]
+transform = Transform3D(-0.2385334, 0, 0.9711343, 0, 1, 0, -0.9711343, 0, -0.2385334, 15.328999, 14, 146.46597)
+material_override = SubResource("StandardMaterial3D_lswn8")
+mesh = SubResource("QuadMesh_1u8w0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/hastane" unique_id=1631733951]
+transform = Transform3D(0.9711341, 0, 0.23853347, 0, 1, 0, -0.23853347, 0, 0.9711341, 7.964012, 14, 158.52797)
+material_override = SubResource("StandardMaterial3D_d13ii")
+mesh = SubResource("QuadMesh_1u8w0")
+
+[node name="maliye" type="StaticBody3D" parent="Map" unique_id=1846918834]
 transform = Transform3D(0.19936793, 0, -0.9799246, 0, 1, 0, 0.9799246, 0, 0.19936793, -33.87367, 5.6574135, 123.54292)
+script = ExtResource("9_cegan")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Map/maliye" unique_id=786835979]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01676941, 5.0215855, -0.007171631)
@@ -788,35 +811,12 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4.9
 material_override = SubResource("StandardMaterial3D_0rl1p")
 mesh = SubResource("QuadMesh_htxhm")
 
-[node name="tokiler" type="Node3D" parent="Map" unique_id=1684957495]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/maliye" unique_id=385171211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.048431396, 0.10064697, -0.038211823)
+shape = SubResource("BoxShape3D_cegan")
 
-[node name="toki57" type="Node3D" parent="Map/tokiler" unique_id=1818125512]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.098114, 4.5322104, 114.43788)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki57" unique_id=1728886821]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki57" unique_id=151296839]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki57" unique_id=467058507]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki57" unique_id=1132951783]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki57" unique_id=479709631]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
+[node name="tokiler" type="StaticBody3D" parent="Map" unique_id=455542497]
+script = ExtResource("9_cegan")
 
 [node name="toki" type="Node3D" parent="Map/tokiler" unique_id=1649371200]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -22.631344, 25.965492, 223.4244)
@@ -2218,201 +2218,9 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 
 material_override = SubResource("StandardMaterial3D_h8e4i")
 mesh = SubResource("QuadMesh_ok6jj")
 
-[node name="toki51" type="Node3D" parent="Map/tokiler" unique_id=1320449981]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 116.42136, 5.5042114, 109.74761)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki51" unique_id=1862251641]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki51" unique_id=378322718]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki51" unique_id=1803354661]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki51" unique_id=79911446]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki51" unique_id=528260791]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki58" type="Node3D" parent="Map/tokiler" unique_id=2073139427]
-transform = Transform3D(-0.53435236, 0, 0.8452618, 0, 1, 0, -0.8452618, 0, -0.53435236, 129.29494, 7.1044655, 106.487656)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki58" unique_id=191299318]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki58" unique_id=831896431]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki58" unique_id=2001475107]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki58" unique_id=311090122]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki58" unique_id=1360734839]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki52" type="Node3D" parent="Map/tokiler" unique_id=1799530673]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 106.789856, 5.0292683, 110.363106)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki52" unique_id=1367492372]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki52" unique_id=582143880]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki52" unique_id=168346745]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki52" unique_id=87340701]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki52" unique_id=1307911994]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki53" type="Node3D" parent="Map/tokiler" unique_id=2025104976]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 96.82817, 5.0292683, 111.8215)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki53" unique_id=2054416242]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki53" unique_id=92052977]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki53" unique_id=1767178424]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki53" unique_id=2096696113]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki53" unique_id=1607786779]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki54" type="Node3D" parent="Map/tokiler" unique_id=1835025198]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 86.90188, 5.0292683, 113.66163)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki54" unique_id=1536609450]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki54" unique_id=1708241419]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki54" unique_id=1820788781]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki54" unique_id=249906811]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki54" unique_id=2138637025]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki55" type="Node3D" parent="Map/tokiler" unique_id=1766814867]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 76.62581, 5.0292683, 113.83927)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki55" unique_id=1065053156]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki55" unique_id=733367584]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki55" unique_id=552575538]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki55" unique_id=1020872874]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki55" unique_id=1018081788]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
-
-[node name="toki56" type="Node3D" parent="Map/tokiler" unique_id=439020779]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 66.7318, 4.7467003, 113.83927)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/tokiler/toki56" unique_id=204800860]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map/tokiler/toki56" unique_id=564492448]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map/tokiler/toki56" unique_id=699862949]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
-mesh = SubResource("QuadMesh_ok6jj")
-surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
-
-[node name="cati" type="MeshInstance3D" parent="Map/tokiler/toki56" unique_id=849641149]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
-material_override = SubResource("StandardMaterial3D_b1qrp")
-mesh = SubResource("PlaneMesh_come4")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map/tokiler/toki56" unique_id=1898738469]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
-material_override = SubResource("StandardMaterial3D_h8e4i")
-mesh = SubResource("QuadMesh_ok6jj")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/tokiler" unique_id=1672224806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.31093, 13.756054, 182.0202)
+shape = SubResource("BoxShape3D_getpj")
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=409091460]
 script = ExtResource("4_1bvp3")
@@ -2430,8 +2238,231 @@ near = 0.01
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1496495054]
 
 [node name="MainMenu" parent="CanvasLayer" unique_id=849037392 instance=ExtResource("6_7mycd")]
-script = ExtResource("7_272bh")
 
 [node name="etkileşimsiz alan" type="Node3D" parent="." unique_id=717214464]
+
+[node name="toki51" type="Node3D" parent="etkileşimsiz alan" unique_id=1320449981]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 116.42136, 5.5042114, 109.74761)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki51" unique_id=1862251641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki51" unique_id=378322718]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki51" unique_id=1803354661]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki51" unique_id=79911446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki51" unique_id=528260791]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki58" type="Node3D" parent="etkileşimsiz alan" unique_id=2073139427]
+transform = Transform3D(-0.53435236, 0, 0.8452618, 0, 1, 0, -0.8452618, 0, -0.53435236, 129.29494, 7.1044655, 106.487656)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki58" unique_id=191299318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki58" unique_id=831896431]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki58" unique_id=2001475107]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki58" unique_id=311090122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki58" unique_id=1360734839]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki52" type="Node3D" parent="etkileşimsiz alan" unique_id=1799530673]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 106.789856, 5.0292683, 110.363106)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki52" unique_id=1367492372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki52" unique_id=582143880]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki52" unique_id=168346745]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki52" unique_id=87340701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki52" unique_id=1307911994]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki53" type="Node3D" parent="etkileşimsiz alan" unique_id=2025104976]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 96.82817, 5.0292683, 111.8215)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki53" unique_id=2054416242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki53" unique_id=92052977]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki53" unique_id=1767178424]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki53" unique_id=2096696113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki53" unique_id=1607786779]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki54" type="Node3D" parent="etkileşimsiz alan" unique_id=1835025198]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 86.90188, 5.0292683, 113.66163)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki54" unique_id=1536609450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki54" unique_id=1708241419]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki54" unique_id=1820788781]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki54" unique_id=249906811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki54" unique_id=2138637025]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki55" type="Node3D" parent="etkileşimsiz alan" unique_id=1766814867]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 76.62581, 5.0292683, 113.83927)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki55" unique_id=1065053156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki55" unique_id=733367584]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki55" unique_id=552575538]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki55" unique_id=1020872874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki55" unique_id=1018081788]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki56" type="Node3D" parent="etkileşimsiz alan" unique_id=439020779]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 66.7318, 4.7467003, 113.83927)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki56" unique_id=204800860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki56" unique_id=564492448]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki56" unique_id=699862949]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki56" unique_id=849641149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki56" unique_id=1898738469]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
+
+[node name="toki57" type="Node3D" parent="etkileşimsiz alan" unique_id=1818125512]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.098114, 4.5322104, 114.43788)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="etkileşimsiz alan/toki57" unique_id=1728886821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="etkileşimsiz alan/toki57" unique_id=151296839]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="etkileşimsiz alan/toki57" unique_id=467058507]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4)
+mesh = SubResource("QuadMesh_ok6jj")
+surface_material_override/0 = SubResource("StandardMaterial3D_facbu")
+
+[node name="cati" type="MeshInstance3D" parent="etkileşimsiz alan/toki57" unique_id=1132951783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025597572, 9.994286, 0.017669678)
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("PlaneMesh_come4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="etkileşimsiz alan/toki57" unique_id=479709631]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -4, 0, 0)
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("QuadMesh_ok6jj")
 
 [editable path="Map"]

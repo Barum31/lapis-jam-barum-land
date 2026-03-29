@@ -87,3 +87,5 @@ func sondur():
 				parca.set_surface_override_material(i, null)
 func _on_game_tick_updated(value):
 	print("!")
+	
+	
