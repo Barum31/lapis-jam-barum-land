@@ -71,16 +71,7 @@ func _on_tick_timeout():
 	current_tick += 1
 	kaynak_guncelle()
 	ui_guncelle()
-func apply_tick_mechanics():
-	# Belirli tick sayılarında farklı olaylar tetikle
-		match current_tick % 4:
-			0:print("event")
-		
-			1:print("event")
-		
-			2:print("event")
-		
-			3:print("event")
+
 
 signal tick_changed(new_tick_value)
 func kaynak_guncelle():
@@ -101,3 +92,26 @@ func _on_texture_button_start_pressed() -> void:
 	
 	
 	animation_player.play("MenuZoom")
+func apply_tick_mechanics():
+	# Örn: Her 4 tick'te bir %50 ihtimalle event çıksın
+	if current_tick % 4 == 0:
+		var sans = randf()
+		if sans > 0.7:
+			tetikle_rastgele_event()
+
+func tetikle_rastgele_event():
+	# Klasördeki event dosyalarından birini rastgele seç (Basit örnek)
+	var event_listesi = ["res://Events/Aclik.tres", "res://Events/Firtina.tres"]
+	var secilen_path = event_listesi.pick_random()
+	var event_verisi = load(secilen_path)
+	
+	# UI'yı bu veriyle doldur ve göster
+	$Event.display_event(event_verisi)
+	$Event.show()
+func apply_event_effects(incoming_effects: Dictionary):
+	# Gelen etkileri mevcut kaynaklara ekle
+	for key in incoming_effects:
+		if kaynaklar.has(key):
+			kaynaklar[key] += incoming_effects[key]
+	# Senin yazdığın fonksiyonu çağırarak ekrandaki Labeled'ları güncelle
+	ui_guncelle()
