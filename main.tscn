@@ -50,7 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://bx7v03su4p4w4" path="res://esmael.png" id="33_4k2k6"]
 [ext_resource type="Texture2D" uid="uid://duogs4d0nukbe" path="res://START BUTTON.png" id="33_ok6jj"]
 [ext_resource type="Texture2D" uid="uid://cb413ckasomll" path="res://SETTİNGS BUTTON.png" id="34_facbu"]
-[ext_resource type="Script" path="res://esmael_uretim.gd" id="35_4lmeg"]
+[ext_resource type="Script" uid="uid://pam75hws7for" path="res://esmael_uretim.gd" id="35_4lmeg"]
 [ext_resource type="Texture2D" uid="uid://ho8xbu88k88r" path="res://CREDİTS.png" id="35_b1qrp"]
 [ext_resource type="Texture2D" uid="uid://b4ttc1dmhmwcx" path="res://ulusal yükseliş.png" id="36_come4"]
 [ext_resource type="Texture2D" uid="uid://cbq6upa55ahd0" path="res://arden toy.png" id="37_come4"]
@@ -413,12 +413,16 @@ _data = {
 &"RESET": SubResource("Animation_5vw27")
 }
 
+[sub_resource type="Environment" id="Environment_vke2r"]
+background_mode = 1
+background_color = Color(0.3820807, 7.52043e-07, 1.6845763e-07, 1)
+fog_light_energy = 0.0
+
 [node name="main" type="Node3D" unique_id=847394524]
 script = ExtResource("1_seu75")
 
 [node name="Map" parent="." unique_id=953951384 instance=ExtResource("1_0xm2m")]
 script = ExtResource("2_h2yge")
-metadata/_edit_lock_ = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/dekanlık" parent_id_path=PackedInt32Array(953951384, 759227664) index="0" unique_id=1789515475]
 script = ExtResource("3_h2yge")
@@ -844,6 +848,10 @@ transform = Transform3D(-0.94832367, 0, 0.31730458, 0, 1, 0, -0.31730458, 0, -0.
 script = ExtResource("9_cegan")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/hastane" unique_id=81266686]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 4.641426, 11.088492, 148.56322)
+shape = SubResource("BoxShape3D_074og")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/hastane" unique_id=968735477]
 transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 4.641426, 11.088492, 148.56322)
 shape = SubResource("BoxShape3D_074og")
 
@@ -2990,6 +2998,22 @@ visible = false
 [node name="MainMenu" parent="CanvasLayer" unique_id=894189762 instance=ExtResource("32_htxhm")]
 
 [node name="etkileşimsiz alan2" type="Node3D" parent="." unique_id=2072421664]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=127929402]
+environment = SubResource("Environment_vke2r")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1900715113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.135506, 223.50873, -100)
+light_color = Color(0.9802334, 0.97633594, 1, 1)
+light_energy = 11.298
+light_volumetric_fog_energy = 10.561
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.5
+shadow_normal_bias = 0.5
+shadow_opacity = 0.0
+shadow_blur = 0.5
 
 [connection signal="pressed" from="OyunArayuzu/MainMenu/TextureButtonStart" to="." method="_on_texture_button_start_pressed"]
 
